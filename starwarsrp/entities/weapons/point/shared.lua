@@ -5,7 +5,7 @@ if (SERVER) then
 	SWEP.AutoSwitchFrom		= true
 end
 
-SWEP.Category = "SUP • Разное"
+SWEP.Category = "Piwnica Granie • Różne"
 
 SWEP.Base = "weapon_base"
 
@@ -257,7 +257,7 @@ if CLIENT then
         point_menu:SetSize(210,160)
         point_menu:SetPos(ScrW()*.5-point_menu:GetWide()*.5, ScrH()*.5-point_menu:GetTall()*.5)
         point_menu:MakePopup()
-        point_menu:SetTitle( 'Помощь в координации' )
+        point_menu:SetTitle( 'Pomoc w koordynacji' )
         -- point_menu.Paint = function( self, w, h )
         --     draw.RoundedBox(0,0,0,w,h,Color(64, 105, 153, 250))
         -- end
@@ -319,7 +319,7 @@ if CLIENT then
         DTextEntry:SetPos( 5, 57 )
         DTextEntry:SetSize( 200, 20 )
         DTextEntry:SetPlaceholderColor( Color(0, 0, 0) )
-        DTextEntry:SetPlaceholderText( 'Название' )
+        DTextEntry:SetPlaceholderText( 'Nazwa' )
 
         -- DTextEntry.Paint = function( self, w, h )
         --     draw.RoundedBox(0,0,0,w,h,Color(255, 255, 255, 255))
@@ -329,7 +329,7 @@ if CLIENT then
         local DTextEntry2 = vgui.Create( "DTextEntry", point_menu )
         DTextEntry2:SetPos( 5, 79 )
         DTextEntry2:SetSize( 200, 20 )
-        DTextEntry2:SetPlaceholderText( 'Текст' )
+        DTextEntry2:SetPlaceholderText( 'Tekst' )
 
         -- DTextEntry2.Paint = function( self, w, h )
         --     draw.RoundedBox(0,0,0,w,h,Color(255, 255, 255, 255))
@@ -348,7 +348,7 @@ if CLIENT then
         -- end
 
         local DermaButton = vgui.Create( "DButton", point_menu )
-        DermaButton:SetText( "Сохранить" )
+        DermaButton:SetText( "Zapisz" )
         DermaButton:SetPos( 5, 101+23 )
         DermaButton:SetSize( 200, 30 )
         DermaButton.DoClick = function()

@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 if CLIENT then
-	SWEP.PrintName = "Палка Освобождения"
+	SWEP.PrintName = "Pałka Wyzwolenia"
 	SWEP.Slot = 1
 	SWEP.SlotPos = 3
 	SWEP.DrawAmmo = false
@@ -19,7 +19,7 @@ SWEP.WorldModel = Model("models/weapons/w_stunbaton.mdl")
 
 SWEP.Instructions = "Left click to unarrest\nRight click to switch batons"
 
-SWEP.Category = "SUP • Разное"
+SWEP.Category = "Piwnica Granie • Różne"
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
 

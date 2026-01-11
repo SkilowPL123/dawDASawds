@@ -62,7 +62,7 @@ hook.Add( "DatabaseInitialized", "DatabaseInitialized", function()
 
 	local jobs_query = {}
 	for _, jdata in pairs(re.jobs) do
-		table.insert(jobs_query, "(" .. MySQLite.SQLStr(jdata.jobID) .. ", \"Нет описания\", 1)")
+		table.insert(jobs_query, "(" .. MySQLite.SQLStr(jdata.jobID) .. ", \"Brak opisu\", 1)")
 	end
 
 	MySQLite.query("INSERT IGNORE re_legions (team_id, description, last_editor) VALUES " .. string.Implode(",\n", jobs_query) .. ";")

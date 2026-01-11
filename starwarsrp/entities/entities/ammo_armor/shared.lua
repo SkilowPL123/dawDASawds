@@ -1,6 +1,6 @@
 ENT.Base = "ammo_box"
-ENT.PrintName = "Патроны для винтовки"
-ENT.Instructions = "Содержит 64 патрона"
+ENT.PrintName = "Nabój do karabinu"
+ENT.Instructions = "Zawiera 64 naboje"
 ENT.Spawnable = true
 ENT.AdminSpawnable = true
-ENT.Category = "Renaissance • Разработки"
+ENT.Category = "Piwnica Granie • Rzeczy"

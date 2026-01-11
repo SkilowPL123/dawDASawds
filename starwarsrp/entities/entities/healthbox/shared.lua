@@ -1,10 +1,10 @@
 ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
-ENT.PrintName = "Медикаменты"
+ENT.PrintName = "Medykamenty"
 ENT.Author = "Acklay"
 ENT.Spawnable = true
 ENT.AdminSpawnable = true
-ENT.Category = "SUP • Разработки"
+ENT.Category = "Piwnica Granie • Rzeczy"
 
 function ENT:SetupDataTables()
 	self:NetworkVar( "Float", 0, "Uses" )

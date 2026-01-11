@@ -1,9 +1,9 @@
 AddCSLuaFile()
 
-SWEP.PrintName			= "Руки"
+SWEP.PrintName			= "Ręce"
 SWEP.Author				= "pack" -- The Maw
-SWEP.Purpose    		= "Удерживайте левую кнопку мыши, чтобы перетащить элементы."
-SWEP.Category = "SUP • Разное"
+SWEP.Purpose    		= "Przytrzymaj lewy przycisk myszy, aby przeciągnąć elementy."
+SWEP.Category = "Piwnica Granie • Różne"
 
 SWEP.ViewModel			= "models/weapons/c_medkit.mdl"
 SWEP.WorldModel			= ""
@@ -130,7 +130,7 @@ end
 
 animstionsTable = {
 	{
-		name = 'Комлинк';
+		name = 'Comlink';
 		bones = {
 	        ["ValveBiped.Bip01_R_UpperArm"] = Angle(32.9448, -103.5211, 2.2273),
 	        ["ValveBiped.Bip01_R_Forearm"] = Angle(-90.3271, -31.3616, -41.8804),
@@ -139,7 +139,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Скрестить Руки';
+		name = 'Skrzyżuj Ręce';
 		bones = {
             ["ValveBiped.Bip01_R_Forearm"] = Angle(-43.779933929443,-107.18412780762,15.918969154358),
             ["ValveBiped.Bip01_R_UpperArm"] = Angle(20.256689071655, -57.223915100098, -6.1269416809082),
@@ -153,7 +153,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Убрать Руки';
+		name = 'Schowaj Ręce';
 		bones = {
 	        ["ValveBiped.Bip01_R_UpperArm"] = Angle(3.809, 15.382, 2.654),
 	        ["ValveBiped.Bip01_R_Forearm"] = Angle(-63.658, 1.8 , -84.928),
@@ -166,7 +166,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Дай пять!';
+		name = 'Daj piątkę!';
 		bones = {
 	        ["ValveBiped.Bip01_L_Forearm"] = Angle(25,-65,25),
 	        ["ValveBiped.Bip01_L_UpperArm"] = Angle(-70,-180,70),
@@ -174,7 +174,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Гололинк';
+		name = 'Hololink';
 		bones = {
 	        ["ValveBiped.Bip01_R_UpperArm"] = Angle(10,-20),
 	        ["ValveBiped.Bip01_R_Hand"] = Angle(0,1,50),
@@ -184,7 +184,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Средний Палец';
+		name = 'Środkowy Palec';
 		bones = {
 	        ["ValveBiped.Bip01_R_UpperArm"] = Angle(15,-55,-0),
 	        ["ValveBiped.Bip01_R_Forearm"] = Angle(0,-55,-0),
@@ -202,7 +202,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Указать';
+		name = 'Wskazać';
 		bones = {
 	        ["ValveBiped.Bip01_R_Finger2"] = Angle(4.151602268219, -52.963024139404, 0.42117667198181),
 	        ["ValveBiped.Bip01_R_Finger21"] = Angle(0.00057629722869024, -58.618747711182, 0.001297949347645),
@@ -215,7 +215,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Воинское Приветствие';
+		name = 'Wojskowe Pozdrowienie';
 		bones = {
 	        ["ValveBiped.Bip01_R_UpperArm"] = Angle(80, -95, -77.5),
 	        ["ValveBiped.Bip01_R_Forearm"] = Angle(35, -125, -5),
@@ -223,7 +223,7 @@ animstionsTable = {
 	};
 
 	{
-		name = 'Сдаюсь!';
+		name = 'Poddaję się!';
 		bones = {
 	        ["ValveBiped.Bip01_L_Forearm"] = Angle(25,-65,25),
 	        ["ValveBiped.Bip01_R_Forearm"] = Angle(-25,-65,-25),

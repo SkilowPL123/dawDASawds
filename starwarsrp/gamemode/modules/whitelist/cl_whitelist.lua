@@ -948,14 +948,14 @@ local function OpenNextInfo(jdata)
 		if WhitelistMenu.SelectedChar then
 			h = h - 35
 			local char = WhitelistMenu.SelectedChar
-			draw.ShadowSimpleText("Imię postaci: " .. char.character_name .. " " .. char.rpid, luna.MontBase30, 10, h - 70, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
+			draw.ShadowSimpleText("Nazwa postaci: " .. char.character_name .. " " .. char.rpid, luna.MontBase30, 10, h - 70, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
 			draw.ShadowSimpleText("Ranga: " .. char.rating, luna.MontBase30, 10, h - 40, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
 			local feats = {}
 			for f, b in pairs(char.features) do
 				if b then table.insert(feats, FEATURES_TO_NORMAL[f].name) end
 			end
 
-			draw.ShadowSimpleText("Специализации: " .. string.Implode(", ", feats), luna.MontBase30, 10, h - 10, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
+			draw.ShadowSimpleText("Specjalizacje: " .. string.Implode(", ", feats), luna.MontBase30, 10, h - 10, COLOR_WHITE, TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
 		end
 	end
 
@@ -1042,7 +1042,7 @@ local function ViewInfoLegion(jobID, data)
 	Panel.Right.LastAvatar:SetSteamID(data.community_id)
 	Panel.Right.Next.Paint = function(self, w, h)
 		draw.RoundedBox(6, 0, 0, w, h, COLOR_BG)
-		draw.ShadowSimpleText("Więcej", luna.MontBase30, w / 2, h / 2, COLOR_WHITE, 1, 1)
+		draw.ShadowSimpleText("Więcej informacji", luna.MontBase30, w / 2, h / 2, COLOR_WHITE, 1, 1)
 	end
 
 	local description = data.description
@@ -1270,7 +1270,7 @@ netstream.Hook("OpenWhitelistMenu", function(counts)
 					draw.RoundedBox(6, 0, 0, w, h, ColorAlpha(jdata.Color, self:IsHovered() and 150 or 100))
 					-- if icon._Paint then icon._Paint( self, w, h ) end
 					draw.ShadowSimpleText(team.GetName(jdata.index), luna.MontBase30, 65, 20, COLOR_WHITE, 0, 1)
-					draw.ShadowSimpleText("Postaci: " .. (WhitelistMenu.CharacterCounts[jdata.jobID] or 0), luna.MontBase24, 65, 40, COLOR_WHITE, 0, 1)
+					draw.ShadowSimpleText("Postacie: " .. (WhitelistMenu.CharacterCounts[jdata.jobID] or 0), luna.MontBase24, 65, 40, COLOR_WHITE, 0, 1)
 				end
 
 				icon.DoClick = function()

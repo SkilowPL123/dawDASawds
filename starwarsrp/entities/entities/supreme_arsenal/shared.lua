@@ -1,10 +1,10 @@
 ENT.Type = "anim"
 ENT.Base = "base_entity"
  
-ENT.PrintName		= "Арсенал"
+ENT.PrintName		= "Arsenał"
 ENT.Author			= "-Spac3"
 ENT.Contact			= ""
-ENT.Category		= "SUP • Разное"
+ENT.Category		= "Piwnica Granie • RP"
 
 ENT.Purpose			= ""
 ENT.Instructions	= ""

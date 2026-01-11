@@ -1,15 +1,17 @@
 local un_models = {"models/sup/vrpm/trp/trp.mdl", "models/sup/vrpm/1/trp/trp.mdl", "models/sup/vrpm/1/sgt/sgt.mdl", "models/sup/vrpm/1/ofc/ofc.mdl", "models/sup/vrpm/trp/trp.mdl", "models/sup/vrpm/eng/eng.mdl", "models/sup/vrpm/med/med.mdl", "models/sup/vrpm/para/para.mdl", "models/sup/vrpm/pil/pil.mdl", "models/sup/vrpm/arf/arf.mdl", "models/sup/vrpm/support/support.mdl", "models/sup/vrpm/1/hvy/hvy.mdl", "models/sup/vrpm/1/desant/desant.mdl", "models/sup/vrpm/1/support/support.mdl", "models/sup/vrpm/1/eng/eng.mdl", "models/sup/vrpm/1/driver/driver.mdl"}
 local l501_models = {"models/sup/vrpm/501/trp/trp.mdl", "models/sup/vrpm/501/sgt/sgt.mdl", "models/sup/vrpm/501/ofc/ofc.mdl", "models/sup/vrpm/501/support/support.mdl", "models/sup/vrpm/501/recon/recon.mdl", "models/sup/vrpm/501/hvy/hvy.mdl", "models/sup/vrpm/501/eng/eng.mdl", "models/sup/vrpm/501/driver/driver.mdl", "models/sup/vrpm/501/desant/desant.mdl", "models/sup/vrpm/501/arf/arf.mdl"}
-local l212_models = {"models/sup/vrpm/212/trp/trp.mdl", "models/sup/vrpm/212/sgt/sgt.mdl", "models/sup/vrpm/212/ofc/ofc.mdl", "models/sup/vrpm/212/cody/cody.mdl", "models/sup/vrpm/212/arf/arf.mdl", "models/sup/vrpm/212/desant/desant.mdl", "models/sup/vrpm/212/eng/eng.mdl", "models/sup/vrpm/212/recon/recon.mdl", "models/sup/vrpm/212/hvy/hvy.mdl"}
+local p88th_models = {"models/reizer_models/clones/88th_p2/88th_trp/88th_trp.mdl","models/reizer_models/clones/88th_p2/88th_aa_trp/88th_aa_trp.mdl", "models/reizer_models/clones/88th_p2/88th_pilots/88th_pilot_01a.mdl", "models/reizer_models/clones/88th_p2/88th_pilots/88th_pilot_01b.mdl", "models/reizer_models/clones/88th_p2/88th_guards_cpt/88th_guards_cpt.mdl ", "models/reizer_models/clones/88th_p2/88th_guards_trp/88th_guards_trp.mdl", "models/reizer_models/clones/88th_p2/88th_dakk/88th_dakk.mdl", "models/reizer_models/clones/88th_p2/88th_para_trp/88th_para_trp.mdl","models/reizer_models/clones/88th_p2/88th_jet_cpt/88th_jet_cpt.mdl", "models/reizer_models/clones/88th_p2/88th_medic/88th_medic.mdl","models/reizer_models/clones/88th_p2/88th_guards_trp/88th_guards_trp.mdl", "models/reizer_models/clones/88th_p2/88th_heavy/88th_heavy.mdl","models/reizer_models/clones/88th_p2/88th_heavy/88th_heavy.mdl", "models/reizer_models/clones/88th_p2/88th_eod_custom_01/88th_eod_custom_01.mdl","models/reizer_models/clones/88th_p2/88th_eod_cmd/88th_eod_cmd.mdl","models/reizer_models/clones/88th_p2/88th_eod_trp/88th_eod_trp.mdl", "models/reizer_models/clones/88th_p2/88th_arf/88th_arf.mdl","models/reizer_models/clones/88th_p2/88th_arf/88th_arf_camo3.mdl","models/reizer_models/clones/88th_p2/88th_arf/88th_arf_camo2.mdl","models/reizer_models/clones/88th_p2/88th_arf/88th_arf_camo1.mdl", "models/reizer_models/clones/88th_p2/88th_specops/88th_specops1.mdl","models/reizer_models/clones/88th_p2/88th_specops/88th_specops2.mdl","models/reizer_models/clones/88th_p2/88th_specops/88th_specops3.mdl", "models/reizer_models/clones/88th_p2/88th_arc_specops1/88th_arc_specops1.mdl","models/reizer_models/clones/88th_p2/88th_arc_arf/88th_arc_arf.mdl","models/reizer_models/clones/88th_p2/88th_arc_barc/88th_arc_barc.mdl","models/reizer_models/clones/88th_p2/88th_arc_freedom/88th_arc_freedom.mdl","models/reizer_models/clones/88th_p2/88th_arc/88th_arc.mdl", "models/reizer_models/clones/88th_p2/88th_cpt2/88th_cpt2.mdl","models/reizer_models/clones/88th_p2/88th_reizer/88th_reizer.mdl","models/reizer_models/clones/88th_p2/88th_cpt/88th_cpt.mdl","models/reizer_models/clones/88th_p2/88th_cmd/88th_cmd.mdl","models/reizer_models/clones/88th_p2/88th_custom_01/88th_c_01.mdl"}
+local l212_models = {"models/212th_trp/pm_212th_trp.mdl", "models/212th_arc/pm_212th_arc.mdl", "models/212th_co/pm_212th_co.mdl", "models/212th_gunner/pm_212th_gunner.mdl", "models/212th_cody/pm_212th_cody.mdl", "models/212th_medic/pm_212th_medic.mdl", "models/212th_nco/pm_212th_nco.mdl", "models/212th_pilot/pm_212th_pilot.mdl", "models/212th_xo/pm_212th_xo.mdl", "models/finch212_pltoff/pm_212_pltoff.mdl", "models/finch212_eod/pm_212_eod.mdl", "models/finch212_eodl/pm_212_eodl.mdl"}
 local l104_models = {"models/sup/vrpm/104/trp/trp.mdl", "models/sup/vrpm/104/support/support.mdl", "models/sup/vrpm/104/sgt/sgt.mdl", "models/sup/vrpm/104/recon/recon.mdl", "models/sup/vrpm/104/ofc/ofc.mdl", "models/sup/vrpm/104/hvy/hvy.mdl", "models/sup/vrpm/104/hvy/hvy.mdl", "models/sup/vrpm/104/eng/eng.mdl", "models/sup/vrpm/104/driver/driver.mdl", "models/sup/vrpm/104/desant/desant.mdl", "models/sup/vrpm/104/dcmd/dcmd.mdl", "models/sup/vrpm/104/cmd/cmd.mdl", "models/sup/vrpm/104/arf/arf.mdl"}
-local l327_models = {"models/sup/vrpm/327/trp/trp.mdl", "models/sup/vrpm/327/sgt/sgt.mdl", "models/sup/vrpm/327/pvt/pvt.mdl", "models/sup/vrpm/327/pil/pil.mdl", "models/sup/vrpm/327/para/para.mdl", "models/sup/vrpm/327/ofc/ofc.mdl", "models/sup/vrpm/327/eng/eng.mdl", "models/sup/vrpm/327/arf/arf.mdl"}
+local l327_models = {"models/327th_trp/pm_327th_trp.mdl", "models/327th_officer/pm_327th_officer.mdl", "models/327th_medic/pm_327th_medic.mdl", "models/327th_ktrooper/pm_327th_ktrooper.mdl", "models/327th_deviss/pm_327th_deviss.mdl", "models/327th_comms_k/pm_327th_commsk.mdl", "models/327th_comms_k/pm_327th_commsk.mdl", "models/327th_comms/pm_327th_comms.mdl", "models/327th_bly/pm_327th_bly.mdl", "models/327th_bly/pm_327th_bly.mdl", "models/327th_arf/pm_327th_arf.mdl", "models/327th_arc/pm_327th_arc.mdl", "models/327th_nco/pm_327th_nco.mdl", "models/327th_evo/pm_327th_evo.mdl"}
+local lcg_models = {"models/cg_trp/pm_cg_trp.mdl", "models/cg_arc/pm_cg_arc.mdl", "models/cg_medic/pm_cg_medic.mdl", "models/cg_nco/pm_cg_nco.mdl", "models/cg_pilot/pm_cg_pilot.mdl", "models/cg_riot/pm_cg_riot.mdl", "models/cg_co/pm_cg_co.mdl", "models/cg_xo/pm_cg_xo.mdl"}
 local l91_models = {"models/sup/vrpm/trp/trp.mdl", "models/sup/vrpm/support/support.mdl", "models/sup/vrpm/scout/scout.mdl", "models/sup/vrpm/ofc/ofc.mdl", "models/sup/vrpm/med/med.mdl", "models/sup/vrpm/para/para.mdl", "models/sup/vrpm/eng/eng.mdl", "models/sup/vrpm/arf/arf.mdl", "models/sup/vrpm/pil/pil.mdl", "models/navy/gnavycrewman.mdl"}
 local l15_models = {"models/sup/vrpm/trp/trp15th.mdl", "models/sup/vrpm/ofc/ofc15th.mdl", "models/sup/vrpm/sgt/sgt15th.mdl"}
 local l8_models = {"models/sup/vrpm/8/trp/trp.mdl", "models/sup/vrpm/8/sgt/sgt.mdl", "models/sup/vrpm/8/ofc/ofc.mdl", "models/sup/vrpm/8/hound/hound.mdl", "models/sup/vrpm/8/arf/arf.mdl", "models/sup/vrpm/8/cmd/cmd.mdl", "models/sup/vrpm/8/driver/driver.mdl", "models/sup/vrpm/8/hvy/hvy.mdl", "models/sup/vrpm/8/recon/recon.mdl", "models/sup/vrpm/8/support/support.mdl", "models/sup/vrpm/8/eng/eng.mdl", "models/sup/vrpm/8/thire/thire.mdl", "models/navy/gnavyofficer.mdl"}
 local arf_models = {"models/sup/vrpm/trp/trp.mdl", "models/sup/vrpm/support/support.mdl", "models/sup/vrpm/scout/scout.mdl", "models/sup/vrpm/ofc/ofc.mdl", "models/sup/vrpm/med/med.mdl", "models/sup/vrpm/assault/assault.mdl", "models/sup/vrpm/para/para.mdl", "models/sup/vrpm/eng/eng.mdl", "models/sup/vrpm/arf/arf.mdl", "models/sup/vrpm/pil/pil.mdl", "models/navy/gnavycrewman.mdl", "models/sup/vrpm/arf/cmd/cmd.mdl", "models/sup/vrpm/arf/dcmd/dcmd.mdl", "models/sup/vrpm/arf/ofc/ofc.mdl", "models/sup/vrpm/arf/pvt/pvt.mdl", "models/sup/vrpm/arf/sgt/sgt.mdl", "models/sup/vrpm/arf/arf.mdl"}
 local arf2_models = {"models/sup/vrpm/trp/trp.mdl", "models/sup/vrpm/support/support.mdl", "models/sup/vrpm/scout/scout.mdl", "models/sup/vrpm/ofc/ofc.mdl", "models/sup/vrpm/med/med.mdl", "models/sup/vrpm/assault/assault.mdl", "models/sup/vrpm/para/para.mdl", "models/sup/vrpm/eng/eng.mdl", "models/sup/vrpm/arf/arf.mdl", "models/sup/vrpm/pil/pil.mdl", "models/navy/gnavycrewman.mdl"}
 local admin_models = {"models/player/valley/lgn/pit_droid/pit_droid.mdl"}
-local rookies_models = {"models/player/cr/cr.mdl", "models/player/crd/crd.mdl", "models/player/cry/cry.mdl"}
+local rookies_models = {"pm_cadet_domino", "pm_cadet_bravo", "pm_cadet_zeta"}
 local rc_models = {"models/aussiwozzi/cgi/commando/rc_boss.mdl", "models/aussiwozzi/cgi/commando/rc_fixer.mdl", "models/aussiwozzi/cgi/commando/rc_scorch.mdl", "models/aussiwozzi/cgi/commando/rc_sev.mdl", "models/aussiwozzi/cgi/commando/rc_aquila_batnor.mdl", "models/aussiwozzi/cgi/commando/rc_aquila_cabur.mdl", "models/aussiwozzi/cgi/commando/rc_aquila_cyarika.mdl", "models/aussiwozzi/cgi/commando/rc_aquila_monarch.mdl", "models/aussiwozzi/cgi/commando/rc_aquila_monarch.mdl", "models/aussiwozzi/cgi/commando/rc_corr.mdl", "models/aussiwozzi/cgi/commando/rc_darman.mdl", "models/aussiwozzi/cgi/commando/rc_fi.mdl", "models/aussiwozzi/cgi/commando/rc_dikut.mdl", "models/aussiwozzi/cgi/commando/rc_fisher.mdl", "models/aussiwozzi/cgi/commando/rc_foxtrot_demo.mdl", "models/aussiwozzi/cgi/commando/rc_foxtrot_sniper.mdl", "models/aussiwozzi/cgi/commando/rc_foxtrot_tech.mdl", "models/aussiwozzi/cgi/commando/rc_gregor.mdl", "models/aussiwozzi/cgi/commando/rc_hope_demo.mdl", "models/aussiwozzi/cgi/commando/rc_hope_leader.mdl", "models/aussiwozzi/cgi/commando/rc_hope_sniper.mdl", "models/aussiwozzi/cgi/commando/rc_hope_tech.mdl", "models/aussiwozzi/cgi/commando/rc_ion_climber.mdl", "models/aussiwozzi/cgi/commando/rc_ion_ras.mdl", "models/aussiwozzi/cgi/commando/rc_ion_sniper.mdl", "models/aussiwozzi/cgi/commando/rc_ion_trace.mdl", "models/aussiwozzi/cgi/commando/rc_niner.mdl", "models/aussiwozzi/cgi/commando/rc_plain.mdl", "models/aussiwozzi/cgi/commando/rc_sarge.mdl", "models/aussiwozzi/cgi/commando/rc_tyto.mdl", "models/aussiwozzi/cgi/commando/rc_yayax_cov.mdl", "models/aussiwozzi/cgi/commando/rc_yayax_dev.mdl", "models/aussiwozzi/cgi/commando/rc_yayax_jind.mdl", "models/aussiwozzi/cgi/commando/rc_yayax_yover.mdl", "models/aussiwozzi/cgi/commando/rc_zag.mdl", "models/aussiwozzi/cgi/commando/rc_plain.mdl", "models/aussiwozzi/cgi/commando/rc_snow.mdl", "models/aussiwozzi/cgi/commando/rc_forest.mdl", "models/aussiwozzi/cgi/commando/rc_desert.mdl"}
 local arc_models = {"models/sup/vrpm/arc/arc.mdl", "models/sup/vrpm/arc/cmd/cmd.mdl", "models/sup/vrpm/arc/cpt/cpt.mdl", "models/sup/vrpm/arc/lt/lt.mdl", "models/sup/vrpm/arc/sgt/sgt.mdl", "models/sup/vrpm/arc/neblitz/neblitz.mdl", "models/t_tcw_gar_alpha_wa/t_tcw_gar_alpha_wa.mdl", "models/t_tcw_gar_alpha_wa_cmd/t_tcw_gar_alpha_wa_cmd.mdl", "models/t_tcw_gar_alpha_wa_cpt/t_tcw_gar_alpha_wa_cpt.mdl", "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl", "models/sup/vrpm/arc/bazar/bazar.mdl", "models/sup/vrpm/arc/falke/falke.mdl"}
 local arcpripis_models = {"models/sup/vrpm/8/arc/arc.mdl", "models/sup/vrpm/1/arc/arc.mdl", "models/sup/vrpm/49/arc/arc.mdl", "models/sup/vrpm/501/arc/arc.mdl", "models/sup/vrpm/327/arc/arc.mdl", "models/sup/vrpm/212/arc/arc.mdl", "models/sup/vrpm/104/arc/arc.mdl", "models/sup/vrpm/arc/arc.mdl", "models/sup/vrpm/kyramud/bastard/bastard.mdl", "models/sup/vrpm/kyramud/pangolin/pangolin.mdl", "models/sup/vrpm/kyramud/snake/snake.mdl", "models/sup/vrpm/kyramud/tusk/tusk.mdl", "models/sup/vrpm/kyramud/wouly/wouly.mdl", "models/sup/vrpm/zero/bellingham/bellingham.mdl", "models/sup/vrpm/zero/diddy/diddy.mdl", "models/sup/vrpm/zero/espada/espada.mdl", "models/sup/vrpm/zero/graham/graham.mdl", "models/sup/vrpm/zero/hawkok/hawkok.mdl", "models/sup/vrpm/zero/xorja/xorja.mdl", "models/sup/vrpm/212/cody/cody.mdl"}
@@ -35,7 +37,7 @@ local lorecmd_models = {"models/navy/gnavykrennic.mdl", "models/navy/gnavyarmand
 local slk_models = {"models/sup/vrpm/1/trp/trp.mdl", "models/sup/vrpm/1/support/support.mdl", "models/sup/vrpm/1/sgt/sgt.mdl", "models/sup/vrpm/1/ofc/ofc.mdl", "models/sup/vrpm/1/hvy/hvy.mdl", "models/sup/vrpm/1/eng/eng.mdl", "models/sup/vrpm/1/driver/driver.mdl", "models/sup/vrpm/1/desant/desant.mdl", "models/sup/vrpm/1/arf/arf.mdl"}
 local pilots_models = {"models/sup/vrpm/7/cplt/cplt.mdl", "models/sup/vrpm/7/hplt/hplt.mdl", "models/sup/vrpm/7/plt/plt.mdl", "models/sup/vrpm/7/rplt/rplt.mdl", "models/sup/vrpm/7/splt/splt.mdl"}
 
-TEAM_CADET = re.util.addjob("Реабилитация", {
+TEAM_CADET = re.util.addjob("Kadet", {
 	Color = Color(73, 90, 138, 255),
 	WorldModel = rookies_models,
 	weapons = {"weapon_hands"},
@@ -48,7 +50,7 @@ TEAM_CADET = re.util.addjob("Реабилитация", {
 	Type = TYPE_ROOKIE,
 	control = CONTROL_REPUBLIC,
 })
-TEAM_PILOTS = re.util.addjob("7-ая Эскадрилья", {
+TEAM_PILOTS = re.util.addjob("7. Eskadra", {
 	Color = Color(73, 90, 138, 255),
 	WorldModel = pilots_models,
 	weapons = {"weapon_hands"},
@@ -62,7 +64,21 @@ TEAM_PILOTS = re.util.addjob("7-ая Эскадрилья", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_PILOTS = re.util.addjob("501й Отряд Ворона", {
+TEAM_PLUT88 = re.util.addjob("Pluton 88th", {
+	Color = Color(73, 90, 138, 255),
+	WorldModel = p88th_models,
+	weapons = {"weapon_hands"},
+	weaponcrate = {"vibrokinfe_base"},
+	jobID = "88th",
+	max = 99,
+	maxHealth = 150,
+	maxArmor = 150,
+	skins = {},
+	Type = TYPE_CLONE,
+	control = CONTROL_REPUBLIC,
+})
+
+TEAM_PILOTS = re.util.addjob("501st Raven Squad", {
 	Color = Color(73, 90, 138, 255),
 	WorldModel = l49_models,
 	weapons = {"weapon_hands"},
@@ -76,7 +92,7 @@ TEAM_PILOTS = re.util.addjob("501й Отряд Ворона", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_SLK = re.util.addjob("1-ая Дивизия", {
+TEAM_SLK = re.util.addjob("1st Division", {
 	Color = Color(100, 107, 128),
 	WorldModel = slk_models,
 	weapons = {"weapon_hands"},
@@ -90,7 +106,7 @@ TEAM_SLK = re.util.addjob("1-ая Дивизия", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_MASIF = re.util.addjob("Массиф", {
+TEAM_MASIF = re.util.addjob("Massif", {
 	Color = Color(73, 90, 138, 255),
 	WorldModel = massif_model,
 	weapons = {"weapon_hands", "weapon_drakamassif"},
@@ -108,7 +124,7 @@ TEAM_MASIF = re.util.addjob("Массиф", {
 	end,
 })
 
-TEAM_187 = re.util.addjob("187-ой Легион", {
+TEAM_187 = re.util.addjob("187th Legion", {
 	Color = Color(73, 90, 138, 255),
 	WorldModel = l187_models,
 	weapons = {"weapon_hands"},
@@ -123,7 +139,7 @@ TEAM_187 = re.util.addjob("187-ой Легион", {
     radio = 18.7,
 })
 
-TEAM_UN = re.util.addjob("Стандартный Легион Клонов", {
+TEAM_UN = re.util.addjob("Standard Clone Legion", {
 	Color = Color(60, 118, 165),
 	WorldModel = un_models, -- Дефолдная модель.
 	description = [[]],
@@ -139,7 +155,7 @@ TEAM_UN = re.util.addjob("Стандартный Легион Клонов", {
     radio = 1,
 })
 
-TEAM_212 = re.util.addjob("212-й Батальон", {
+TEAM_212 = re.util.addjob("212th Battalion", {
 	Color = Color(168, 74, 30),
 	WorldModel = l212_models, -- Дефолдная модель.
 	description = [[]],
@@ -155,7 +171,7 @@ TEAM_212 = re.util.addjob("212-й Батальон", {
     radio = 21.2,
 })
 
-TEAM_501 = re.util.addjob("501-й Легион", {
+TEAM_501 = re.util.addjob("501. Legion", {
 	Color = Color(34, 94, 184),
 	WorldModel = l501_models, -- Дефолдная модель.
 	description = [[]],
@@ -171,7 +187,7 @@ TEAM_501 = re.util.addjob("501-й Легион", {
     radio = 50.1,
 })
 
-TEAM_104 = re.util.addjob("104-й Батальон", {
+TEAM_104 = re.util.addjob("104. Battalion", {
 	Color = Color(65, 65, 65),
 	WorldModel = l104_models, -- Дефолдная модель.
 	description = [[]],
@@ -187,7 +203,7 @@ TEAM_104 = re.util.addjob("104-й Батальон", {
     radio = 10.4,
 })
 
-TEAM_327 = re.util.addjob("327-й Батальон", {
+TEAM_327 = re.util.addjob("327. Battalion", {
 	Color = Color(129, 89, 16),
 	WorldModel = l327_models, -- Дефолдная модель.
 	description = [[]],
@@ -203,7 +219,23 @@ TEAM_327 = re.util.addjob("327-й Батальон", {
     radio = 32.7,
 })
 
-TEAM_15 = re.util.addjob("15-й Батальон", {
+TEAM_CG = re.util.addjob("Gwardia Coruscant", {
+	Color = Color(201, 33, 29),
+	WorldModel = lcg_models, -- Дефолдная модель.
+	description = [[]],
+	weapons = {"weapon_hands"},
+	weaponcrate = {"vibrokinfe_base", "masita_dc15s", "masita_dual_dc17"},
+	jobID = "CG",
+	maxHealth = 175,
+	maxArmor = 200,
+	max = 99,
+	Type = TYPE_CLONE,
+	flashlight = true,
+	control = CONTROL_REPUBLIC,
+    radio = 42.6,
+})
+
+TEAM_15 = re.util.addjob("15. Battalion", {
 	Color = Color(76, 121, 26),
 	WorldModel = l15_models, -- Дефолдная модель.
 	description = [[]],
@@ -219,7 +251,7 @@ TEAM_15 = re.util.addjob("15-й Батальон", {
     radio = 15,
 })
 
-TEAM_8 = re.util.addjob("8-ой Отдел Гвардии", {
+TEAM_8 = re.util.addjob("8. Guard Department", {
 	Color = Color(146, 53, 53),
 	WorldModel = l8_models, -- Дефолдная модель.
 	description = [[]],
@@ -235,7 +267,7 @@ TEAM_8 = re.util.addjob("8-ой Отдел Гвардии", {
     radio = 8,
 })
 
-TEAM_ARF = re.util.addjob("75-й Отдел", {
+TEAM_ARF = re.util.addjob("75. Department", {
 	Color = Color(28, 73, 41),
 	WorldModel = larf_models, -- Дефолдная модель.
 	description = [[]],
@@ -251,7 +283,7 @@ TEAM_ARF = re.util.addjob("75-й Отдел", {
     radio = 75,
         })
 
-TEAM_ARF2 = re.util.addjob("ЭРК", {
+TEAM_ARF2 = re.util.addjob("ARF", {
 	Color = Color(128, 128, 128),
 	WorldModel = larf2_models, -- Дефолдная модель.
 	description = [[]],
@@ -267,7 +299,7 @@ TEAM_ARF2 = re.util.addjob("ЭРК", {
     radio = 25,
 })
 
-TEAM_ARC = re.util.addjob("24-й Отдел", {
+TEAM_ARC = re.util.addjob("24. Oddział", {
 	Color = Color(0, 80, 146),
 	WorldModel = arc_models, -- Дефолдная модель.
 	description = [[]],
@@ -284,7 +316,7 @@ TEAM_ARC = re.util.addjob("24-й Отдел", {
 })
 
 
-TEAM_COMMANDO = re.util.addjob("3-й Отдел", {
+TEAM_COMMANDO = re.util.addjob("3. Oddział", {
 	Color = Color(129, 35, 35),
 	WorldModel = rc_models,
 	description = [[]],
@@ -315,7 +347,7 @@ TEAM_COMMANDO = re.util.addjob("3-й Отдел", {
 -- 	control = CONTROL_REPUBLIC,
 -- })
 
-TEAM_ASTROMECH = re.util.addjob("Дроид", {
+TEAM_ASTROMECH = re.util.addjob("Droid", {
 	Color = Color(42, 99, 145, 255),
 	WorldModel = astro_models, -- Дефолдная модель.
 	description = [[]],
@@ -330,7 +362,7 @@ TEAM_ASTROMECH = re.util.addjob("Дроид", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_MERCENARY = re.util.addjob("Наёмник", {
+TEAM_MERCENARY = re.util.addjob("Mercenary", {
 	Color = Color(42, 99, 145, 255),
 	WorldModel = mercenary_models, -- Дефолдная модель.
 	description = [[]],
@@ -360,7 +392,7 @@ TEAM_MERCENARY = re.util.addjob("Наёмник", {
 -- 	flashlight = true,
 -- })
 
-TEAM_SENATOR = re.util.addjob("Сенатор", {
+TEAM_SENATOR = re.util.addjob("Senator", {
 	Color = Color(42, 99, 145, 255),
 	WorldModel = senator_models, -- Дефолдная модель.
 	description = [[]],
@@ -375,7 +407,7 @@ TEAM_SENATOR = re.util.addjob("Сенатор", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_LORECOMMANDER = re.util.addjob("Командование Сектора", {
+TEAM_LORECOMMANDER = re.util.addjob("Sector Command", {
 	Color = Color(146, 40, 212, 255),
 	WorldModel = lorecmd_models,
 	description = [[]],
@@ -391,7 +423,7 @@ TEAM_LORECOMMANDER = re.util.addjob("Командование Сектора", {
 	notarget = true,
 })
 
-TEAM_OVERWATCH = re.util.addjob("Администратор", {
+TEAM_OVERWATCH = re.util.addjob("Administrator", {
 	Color = Color(143, 30, 53, 255),
 	WorldModel = admin_models,
 	description = [[]],
@@ -408,7 +440,7 @@ TEAM_OVERWATCH = re.util.addjob("Администратор", {
 	end,
 })
 
-TEAM_JEDI = re.util.addjob("Сюжетный Джедай", {
+TEAM_JEDI = re.util.addjob("Storyline Jedi", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi_story,
 	description = [[]],
@@ -419,12 +451,12 @@ TEAM_JEDI = re.util.addjob("Сюжетный Джедай", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 
 })
 
-TEAM_JEDI1 = re.util.addjob("Юнлинг", {
+TEAM_JEDI1 = re.util.addjob("Youngling", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi1_models,
 	description = [[]],
@@ -435,14 +467,14 @@ TEAM_JEDI1 = re.util.addjob("Юнлинг", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 	PlayerLoadout = function(ply)
 		ply:SetModelScale(.8)
 	end,
 })
 
-TEAM_JEDI2 = re.util.addjob("Орден Джедаев", {
+TEAM_JEDI2 = re.util.addjob("Jedi Order", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi_models,
 	description = [[]],
@@ -453,12 +485,12 @@ TEAM_JEDI2 = re.util.addjob("Орден Джедаев", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 
 })
 
-TEAM_JEDI3 = re.util.addjob("Мастер", {
+TEAM_JEDI3 = re.util.addjob("Master", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi2_models,
 	description = [[]],
@@ -469,12 +501,12 @@ TEAM_JEDI3 = re.util.addjob("Мастер", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 
 })
 
-TEAM_JEDI4 = re.util.addjob("Магистр", {
+TEAM_JEDI4 = re.util.addjob("Magister", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi3_models,
 	description = [[]],
@@ -485,12 +517,12 @@ TEAM_JEDI4 = re.util.addjob("Магистр", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 
 })
 
-TEAM_JEDI5 = re.util.addjob("Гранд-Мастер", {
+TEAM_JEDI5 = re.util.addjob("Grand Master", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi4_models,
 	description = [[]],
@@ -501,12 +533,12 @@ TEAM_JEDI5 = re.util.addjob("Гранд-Мастер", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 
 })
 
-TEAM_JEDIMED = re.util.addjob("Джедай - Целитель", {
+TEAM_JEDIMED = re.util.addjob("Jedi - Healer", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = jedi_models,
 	description = [[]],
@@ -517,11 +549,11 @@ TEAM_JEDIMED = re.util.addjob("Джедай - Целитель", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_JEDI7 = re.util.addjob("Йода", {
+TEAM_JEDI7 = re.util.addjob("Yoda", {
 	Color = Color(59, 77, 125, 255),
 	WorldModel = yoda_model,
 	description = [[]],
@@ -532,14 +564,14 @@ TEAM_JEDI7 = re.util.addjob("Йода", {
 	max = 99,
 	Type = TYPE_JEDI,
 	flashlight = true,
-	customCategory = "Орден Джедаев",
+	customCategory = "Jedi Order",
 	control = CONTROL_REPUBLIC,
 	PlayerLoadout = function(ply)
 		ply:SetModelScale(.5)
 	end,
 })
 
-TEAM_ARCspec = re.util.addjob("ЭРК", {
+TEAM_ARCspec = re.util.addjob("ARC", {
 	Color = Color(0, 80, 146),
 	WorldModel = arcpripis_models, -- Дефолдная модель.
 	description = [[]],
@@ -554,7 +586,7 @@ TEAM_ARCspec = re.util.addjob("ЭРК", {
 	control = CONTROL_REPUBLIC,
 })
 
-TEAM_CITIZEN = re.util.addjob("Ивент • Гражданский", {
+TEAM_CITIZEN = re.util.addjob("Event • Citizen", {
 	Color = Color(43, 92, 54, 255),
 	WorldModel = citizen_models,
 	description = [[]],
@@ -567,7 +599,7 @@ TEAM_CITIZEN = re.util.addjob("Ивент • Гражданский", {
 	Type = TYPE_CITIZEN,
 })
 
-TEAM_POLICE = re.util.addjob("Ивент • Полицейский", {
+TEAM_POLICE = re.util.addjob("Event • Police", {
 	Color = Color(47, 115, 79, 255),
 	WorldModel = police_models,
 	description = [[]],
@@ -579,7 +611,7 @@ TEAM_POLICE = re.util.addjob("Ивент • Полицейский", {
 	Type = TYPE_CITIZEN,
 })
 
-TEAM_CIS1 = re.util.addjob("КНС • Дроид B1", {
+TEAM_CIS1 = re.util.addjob("CIS • Droid B1", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/droidb1.mdl",},
 	description = [[]],
@@ -591,12 +623,12 @@ TEAM_CIS1 = re.util.addjob("КНС • Дроид B1", {
 	maxArmor = 250,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CIS2 = re.util.addjob("КНС • Дроид B1 Фиксатор", {
+TEAM_CIS2 = re.util.addjob("CIS • Droid B1 Grappler", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/droidb1_grappler.mdl"},
 	description = [[]],
@@ -608,12 +640,12 @@ TEAM_CIS2 = re.util.addjob("КНС • Дроид B1 Фиксатор", {
 	maxArmor = 250,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CISTYAZ = re.util.addjob("КНС • Дроид B1 Тяжёлый", {
+TEAM_CISTYAZ = re.util.addjob("CIS • Droid B1 Heavy", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/droidb1.mdl"},
 	description = [[]],
@@ -625,12 +657,12 @@ TEAM_CISTYAZ = re.util.addjob("КНС • Дроид B1 Тяжёлый", {
 	maxArmor = 350,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CIS3 = re.util.addjob("КНС • Дроид BX", {
+TEAM_CIS3 = re.util.addjob("CIS • Droid BX", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/droidbx.mdl",},
 	description = [[]],
@@ -642,12 +674,12 @@ TEAM_CIS3 = re.util.addjob("КНС • Дроид BX", {
 	maxArmor = 450,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CIS4 = re.util.addjob("КНС • Дроид BXs", {
+TEAM_CIS4 = re.util.addjob("CIS • Droid BXs", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/droidstalker.mdl",},
 	description = [[]],
@@ -659,12 +691,12 @@ TEAM_CIS4 = re.util.addjob("КНС • Дроид BXs", {
 	maxArmor = 400,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CIS5 = re.util.addjob("КНС • Дроид B2", {
+TEAM_CIS5 = re.util.addjob("CIS • Droid B2", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/sbdroid.mdl",},
 	description = [[]],
@@ -676,7 +708,7 @@ TEAM_CIS5 = re.util.addjob("КНС • Дроид B2", {
 	maxArmor = 1000,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
 	PlayerLoadout = function(ply)
 		ply:SetModelScale(1.3)
@@ -684,7 +716,7 @@ TEAM_CIS5 = re.util.addjob("КНС • Дроид B2", {
     radio = 96,
 })
 
-TEAM_CIS7 = re.util.addjob("КНС • Дроид B2e", {
+TEAM_CIS7 = re.util.addjob("CIS • Droid B2e", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/jajoff/sps/cgidroid/jlm/sbdroid_grapple.mdl",},
 	description = [[]],
@@ -696,12 +728,12 @@ TEAM_CIS7 = re.util.addjob("КНС • Дроид B2e", {
 	maxArmor = 800,
 	flashlight = true,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	control = CONTROL_CIS,
     radio = 96,
 })
 
-TEAM_CIS8 = re.util.addjob("КНС • Командующий", {
+TEAM_CIS8 = re.util.addjob("CIS • Commander", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/super_tactical_kalani/pm_droid_tactical_kalani.mdl"},
 	description = [[]],
@@ -712,14 +744,14 @@ TEAM_CIS8 = re.util.addjob("КНС • Командующий", {
 	maxHealth = 1300,
 	maxArmor = 500,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-TEAM_CIS9 = re.util.addjob("КНС • Джеонозийцы", {
+TEAM_CIS9 = re.util.addjob("CIS • Geonosians", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/galactic/geonosian1/geonosian1.mdl", "models/player/valley/lgn/geonosian/geonosian.mdl"},
 	description = [[]],
@@ -730,14 +762,14 @@ TEAM_CIS9 = re.util.addjob("КНС • Джеонозийцы", {
 	maxHealth = 400,
 	maxArmor = 300,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-TEAM_CIS10 = re.util.addjob("КНС • Зайгеррианцы", {
+TEAM_CIS10 = re.util.addjob("CIS • Zygerrians", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/player/zygerrian/zygerrian_cpt.mdl", "models/player/zygerrian/zygerrian_pitboss.mdl", "models/player/zygerrian/zygerrian_slave_lord.mdl", "models/player/zygerrian/zygerrian_soldier.mdl"},
 	description = [[]],
@@ -748,14 +780,14 @@ TEAM_CIS10 = re.util.addjob("КНС • Зайгеррианцы", {
 	maxHealth = 350,
 	maxArmor = 200,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-TEAM_CIS11 = re.util.addjob("КНС • Трандошане", {
+TEAM_CIS11 = re.util.addjob("CIS • Trandoshans", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/clutch/pm_trandoshan_clutch.mdl", "models/tracker/pm_trandoshan_tracker.mdl", "models/trapper/pm_trandoshan_trapper.mdl", "models/dar/pm_trandoshan_dar.mdl", "models/hunter/pm_trandoshan_hunter.mdl", "models/lotaren/pm_trandoshan_lotaren.mdl", "models/garnac/pm_trandoshan_garnac.mdl", "models/sniper/pm_trandoshan_sniper.mdl", "models/sochek/pm_trandoshan_sochek.mdl"},
 	description = [[]],
@@ -766,14 +798,14 @@ TEAM_CIS11 = re.util.addjob("КНС • Трандошане", {
 	maxHealth = 350,
 	maxArmor = 200,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-TEAM_CIS12 = re.util.addjob("КНС • Викуайцы", {
+TEAM_CIS12 = re.util.addjob("CIS • Vikuaians", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/player/ohanak_gang/pm_pirate_craggy.mdl", "models/player/ohanak_gang/pm_pirate_grunt.mdl", "models/player/ohanak_gang/pm_pirate_gwarm.mdl", "models/player/ohanak_gang/pm_pirate_jiro.mdl", "models/player/ohanak_gang/pm_pirate_marauder.mdl", "models/player/ohanak_gang/pm_pirate_soldier.mdl", "models/player/ohanak_gang/pm_pirate_turk.mdl"},
 	description = [[]],
@@ -784,14 +816,14 @@ TEAM_CIS12 = re.util.addjob("КНС • Викуайцы", {
 	maxHealth = 350,
 	maxArmor = 200,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-TEAM_CIS13 = re.util.addjob("КНС • Лидеры", {
+TEAM_CIS13 = re.util.addjob("CIS • Leaders", {
 	Color = Color(41, 55, 94, 255),
 	WorldModel = {"models/tfa/comm/gg/pm_sw_grievous.mdl", "models/tfa/comm/gg/pm_sw_grievous_nocloak.mdl", "models/tfa/comm/gg/pm_sw_dooku.mdl", "models/maul.mdl", "models/savage.mdl", "models/jellik/asajj/asajj.mdl", "models/player/garith/golden/durge.mdl", "models/grealms/characters/darkjedi/darkjedi.mdl", "models/church/swtor/kage/cpt_kage.mdl", "models/church/ventress_season4.mdl"},
 	description = [[]],
@@ -802,14 +834,14 @@ TEAM_CIS13 = re.util.addjob("КНС • Лидеры", {
 	maxHealth = 3000,
 	maxArmor = 1500,
 	Type = TYPE_DROID,
-	customCategory = "Сепаратисты",
+	customCategory = "Separatists",
 	flashlight = true,
 	control = CONTROL_CIS,
 	PlayerSpawn = function(ply) end,
     radio = 96,
 })
 
-DEFAULT_TEAM = TEAM_CADET
+DEFAULT_TEAM = TEAM_PLUT88
 
 -- KEK, MUGU - PIDARAS
 if SERVER then

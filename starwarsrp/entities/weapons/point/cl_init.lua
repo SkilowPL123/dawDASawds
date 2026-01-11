@@ -1,6 +1,6 @@
 include( "shared.lua" )
 
-language.Add("weapon_rpw_binoculars", "Бинокль КМД")
+language.Add("weapon_rpw_binoculars", "Lornetka KMD")
 
 surface.CreateFont( "rangefinder", {
 	font = "TargetID",
@@ -20,7 +20,7 @@ surface.CreateFont( "rangefinder", {
 	outline = false,
 } )
 
-SWEP.PrintName 				= "Бинокль КМД"
+SWEP.PrintName 				= "Lornetka KMD"
 SWEP.Slot 					= 0
 SWEP.SlotPos 				= 1
 SWEP.DrawAmmo 				= false

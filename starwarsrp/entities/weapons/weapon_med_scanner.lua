@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 if CLIENT then
-	SWEP.PrintName = "Сканер"
+	SWEP.PrintName = "Skaner"
 	SWEP.Slot = 4
 	SWEP.SlotPos = 2
 	SWEP.ViewModelFOV = 69
@@ -15,7 +15,7 @@ SWEP.ViewModelFOV = 90
 SWEP.ViewModelFlip = false
 SWEP.AnimPrefix = "rpg"
 SWEP.UseHands = true
-SWEP.Category = "SUP • Медицина"
+SWEP.Category = "Piwnica Granie • Medycyna"
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
 SWEP.ViewModel = Model("models/datapad/sw_datapad_v.mdl")
@@ -166,13 +166,13 @@ function SWEP:EndScan(target)
 	-- self:SetNextPrimaryFire(CurTime() + 6)
 	local strs = {}
 
-	table.insert(strs, "Здоровье - " .. target:Health() .. "%")
+	table.insert(strs, "Zdrowie - " .. target:Health() .. "%")
 
 	if target:GetNWBool("legBroke") then
-		table.insert(strs, "Перелом")
+		table.insert(strs, "Złamanie")
 	end
 
-	re.util.Notify("green", self:GetOwner(), "Анализ завершён, обнаружено: " .. (#strs > 0 and string.Implode( ", ", strs ) or "Ничего") )
+	re.util.Notify("green", self:GetOwner(), "Analiza zakończona, wykryto: " .. (#strs > 0 and string.Implode( ", ", strs ) or "Nic") )
 end
 
 function SWEP:Think()
@@ -197,7 +197,7 @@ function SWEP:Think()
 		-- end
 
 		if not self:GetOwner():KeyDown(IN_ATTACK) then
-			re.util.Notify("red", self:GetOwner(), "Необходимо задерживать ЛКМ!")
+			re.util.Notify("red", self:GetOwner(), "Musisz przytrzymać lewy przycisk myszy!")
 			self:SetIsScan(false)
 
 			return

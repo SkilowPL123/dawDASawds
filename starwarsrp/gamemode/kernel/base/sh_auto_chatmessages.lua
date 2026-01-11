@@ -1,32 +1,32 @@
 if SERVER then AddCSLuaFile() return end
 
 do
-    local msgPrefix = "Голонет"
+    local msgPrefix = "Holonet"
     local msgIndex = 1
     local msgTable = {
-        "Для вызова администратора используйте: @ адекватная и главное короткая причина вызова.",
-        "Уважайте ваших сослуживцев и братьев по оружию! Они ваша опора и надежные союзники в бою",
-        "Не подводи игроков и администрацию! Не будь НОНрпшером",
-        "Аккуратнее при стрельбе! Не убей своего!",
-        "Учтите что дроиды КНС - не болванчики с оружием, а грозная машина для убийств. Будьте аккуратнее...",
-        "Не нарушая устав и правила сервера, вы обойдете блокировки и посиделки в карцере!",
-        "Спасибо что играете на SUP • Война Клонов! Мы стараемся ради вас!",
-        "Ты же знаешь что SUP • Война Клонов - лучший SWRP ( ͡° ͜ʖ ͡°)",
-        "Находясь на сервере в составе легиона (Неопределённые Солдаты Клоны не в счёт) вы обязаны находится в Discord!",
-        "Болтаешь просто так в Интерком? Приглашаем в карцер!",
-        "Не нажимай кнопки Диспетчерской просто так - будет только хуже!",
-        "Используй /advert и /comm с умом! Болтун - находка для шпиона КНС",
-        "Признак культурного военнослужащего     - отсутствие матов в его речи!",
-        "В медицинском блоке спирт хорошо спрятан, даже не пытайся его украсть",
-        "А ты знал что дефектов-клонов не существует? Это намёк на то, чтобы ты не глупил, юный клон...",
-        "Вместе с вами мы закрепим статус лучшего SWRP сервера!",
-        "Если вы нашли баг/эксплоит - обратитесь к Руководству проекта или, оставьте заявку в Discord: https://discord.gg/sup_servers",
-        "Наш Дискорд: https://discord.gg/sup_servers",
-        "Если вы хотите поддержать проект деньгами: https://discord.gg/sup_servers",
-        "На сервере имеется локальный NonRP-чат - /l",
-        "Чтобы включить вид от третьего лица нажмите F1!",
-        "Благодаря вашей финансовой поддержке мы способны и дальше развивать ваш любимый SUP • Война Клонов!",
-        "Нашему сообществу регулярно требуются новые администраторы. Возможно именно ВЫ нужны нам! Не стесняйтесь писать, рассматриваем все заявки. Оставляйте вашу заявку в Discord!",
+        "Aby wezwać administratora, użyj: @ odpowiedni i, co najważniejsze, krótki powód wezwania.",
+        "Szanujcie swoich współpracowników i braci broni! Są oni waszym wsparciem i niezawodnymi sojusznikami w walce.",
+        "Nie zawiedź graczy i administracji! Nie bądź NON-RP-erem.",
+        "Uważaj przy strzelaniu! Nie zabijaj swojego!",
+        "Pamiętaj, że droidy CIS to nie są głupie figurki z bronią, ale groźne maszyny do zabijania. Bądź ostrożny...",
+        "Nie łamiąc regulaminu i zasad serwera, unikniesz blokad i pobytu w karcerze!",
+        "Dziękujemy, że grasz na Piwnica Granie • Wojna Klonów! Staramy się dla was!",
+        "Wiesz, że Piwnica Granie • Wojna Klonów to najlepszy SWRP ( ͡° ͜ʖ ͡°)",
+        "Będąc na serwerze w oddziale (Nieokreśleni Żołnierze Klony się nie liczą) musisz być na Discordzie!",
+        "Gadasz bez sensu w Interkom? Zapraszamy do karceru!",
+        "Nie naciskaj przycisków w dyspozytorni bez powodu - zostaniesz aresztowany!",
+        "Używaj /advert i /comm z rozwagą! Gaduła to łakomy kąsek dla szpiega CIS",
+        "Oznaką kulturalnego żołnierza jest brak przekleństw w jego mowie!",
+        "W bloku medycznym alkohol jest dobrze ukryty, nawet nie próbuj go kraść",
+        "Czy wiesz, że defektów-klonów nie ma? To wskazówka, żebyś nie robił głupot, młody klonie...",
+        "Razem z wami umocnimy status najlepszego serwera SWRP!",
+        "Jeśli znalazłeś błąd/eksploit - skontaktuj się z Kierownictwem projektu lub zostaw zgłoszenie na Discordzie: https://discord.gg/NavP36Sxcm",
+        "Nasz Discord: https://discord.gg/NavP36Sxcm",
+        "Jeśli chcesz wesprzeć projekt finansowo: https://discord.gg/NavP36Sxcm",
+        "Na serwerze jest lokalny czat NonRP - /l",
+        "Aby włączyć widok z trzeciej osoby, naciśnij F1!",
+        "Dzięki waszemu wsparciu finansowemu możemy dalej rozwijać wasz ulubiony Piwnica Granie • Wojna Klonów!",
+        "Nasza społeczność regularnie potrzebuje nowych administratorów. Być może to właśnie TY jesteś nam potrzebny! Nie krępuj się pisać, rozpatrujemy wszystkie zgłoszenia. Zostaw swoją aplikację na Discordzie!",
     }
 
     timer.Create("AutoChatMessages", 480, 0, function()

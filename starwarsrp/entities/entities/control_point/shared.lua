@@ -3,6 +3,6 @@ ENT.Type = "anim"
 
 ENT.PrintName = "Control Point (NoUse)"
 ENT.Author = "pack"
-ENT.Category = "SUP • Разработки"
+ENT.Category = "Piwnica Granie • Rzeczy"
 
 ENT.Spawnable = true

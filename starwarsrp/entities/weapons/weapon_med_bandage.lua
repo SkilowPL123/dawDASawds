@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 if CLIENT then
-	SWEP.PrintName = "Бинт"
+	SWEP.PrintName = "Bandaż"
 	SWEP.Slot = 4
 	SWEP.SlotPos = 2
 	SWEP.ViewModelFOV = 69
@@ -15,7 +15,7 @@ SWEP.ViewModelFOV = 62
 SWEP.ViewModelFlip = false
 SWEP.AnimPrefix = "rpg"
 SWEP.UseHands = true
-SWEP.Category = "SUP • Медицина"
+SWEP.Category = "Piwnica Granie • Medycyna"
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
 SWEP.ViewModel = Model("models/craphead_scripts/paramedic_essentials/weapons/c_medpack.mdl")
@@ -158,7 +158,7 @@ function SWEP:EndDressing(target)
 	target:RepairLeg()
 
 	self:GetOwner():AddMoney(100)
-	re.util.Notify("green", self:GetOwner(), "Вы излечили перелом! Республика поощряет такие действия, получите 100 РК")
+	re.util.Notify("green", self:GetOwner(), "Wyleczyłeś złamanie! Republika nagradza takie działania, otrzymujesz 100 KR")
 
 end
 
@@ -184,7 +184,7 @@ function SWEP:Think()
 		-- end
 
 		if not self:GetOwner():KeyDown(IN_ATTACK) then
-			re.util.Notify("red", self:GetOwner(), "Необходимо задерживать ЛКМ!")
+			re.util.Notify("red", self:GetOwner(), "Musisz przytrzymać lewy przycisk myszy!")
 			self:SetIsDressing(false)
 
 			return

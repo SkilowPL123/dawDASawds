@@ -19,12 +19,12 @@ SWEP.WElements = {
 SWEP.UseHands = false
 SWEP.Slot = 5 
 SWEP.HoldType = "slam" 
-SWEP.PrintName = "Выдача Экипировки"  
+SWEP.PrintName = "Wydawanie wyposażenia"  
 SWEP.Author = "MuguFugu" 
 SWEP.Spawnable = true  
 SWEP.Weight = 5 
 SWEP.DrawCrosshair = true 
-SWEP.Category	= "SUP • Экипировка"
+SWEP.Category	= "Piwnica Granie • Wyposażenie"
 SWEP.SlotPos = 5 
 SWEP.DrawAmmo = true  
 SWEP.Instructions = "Left click to spawn sw ammo!"   
@@ -67,19 +67,19 @@ self:DefaultReload( ACT_VM_RELOAD )
 if self.Atypes == 1 then
 self.Atypes = 2
 if (CLIENT) then 
-            self.Owner:PrintMessage( HUD_PRINTTALK,  "Медикаменты" )
+            self.Owner:PrintMessage( HUD_PRINTTALK,  "Leki" )
         end
 
 elseif self.Atypes == 2 then
 self.Atypes = 3
 if (CLIENT) then 
-                self.Owner:PrintMessage( HUD_PRINTTALK, "Бронепластины" )
+                self.Owner:PrintMessage( HUD_PRINTTALK, "Płyty pancerza" )
         end
 
 elseif self.Atypes == 3 then
 self.Atypes = 1
 if (CLIENT) then 
-            self.Owner:PrintMessage( HUD_PRINTTALK, "Патроны")
+            self.Owner:PrintMessage( HUD_PRINTTALK, "Amunicja")
         end
 
 end

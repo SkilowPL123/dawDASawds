@@ -475,7 +475,7 @@ local function OpenCharacterMenu(data)
 		footerCharHealth:SetSize(LeftPanel:GetWide() * .50, 70)
 		footerCharHealth:SetPos(LeftPanel:GetWide() - footerCharHealth:GetWide(), 20)
 		footerCharHealth.Paint = function(s, w, h)
-			local health = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Здоровье: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxHealth .. '</colour></font>')
+			local health = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Zdrowie: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxHealth .. '</colour></font>')
 			health:Draw(0, h * .5, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 		end
 
@@ -483,7 +483,7 @@ local function OpenCharacterMenu(data)
 		footerCharArmor:SetSize(LeftPanel:GetWide() * .50, 70)
 		footerCharArmor:SetPos(LeftPanel:GetWide() - footerCharArmor:GetWide(), 110)
 		footerCharArmor.Paint = function(s, w, h)
-			local armor = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Броня: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxArmor .. '</colour></font>')
+			local armor = CurProf and markup.Parse('<font=' .. luna.MontBase30 .. '><colour = 200, 200, 200>Pancerz: </colour><colour = 53, 53, 241>' .. re.jobs[CurProf].maxArmor .. '</colour></font>')
 			armor:Draw(0, h * .5, TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
 		end
 

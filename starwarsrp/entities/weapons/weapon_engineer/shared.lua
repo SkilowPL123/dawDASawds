@@ -7,7 +7,7 @@ if (SERVER) then
 end
 
 -- Swep info
-SWEP.PrintName = "Инструмент"
+SWEP.PrintName = "Narzędzie"
 SWEP.Author = ""
 SWEP.Instructions = ""
 SWEP.Contact = ""
@@ -22,7 +22,7 @@ SWEP.UseHands = true
 
 -- Client info
 if (CLIENT) then
-    SWEP.Category				= "SUP • Разное"
+    SWEP.Category = "Piwnica Granie • Różne"
     SWEP.Slot = 4
     SWEP.SlotPos = 2
     SWEP.ViewModelFOV = 69

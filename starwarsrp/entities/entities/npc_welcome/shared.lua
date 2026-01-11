@@ -1,5 +1,5 @@
 ENT.Base = "base_npc"
-ENT.PrintName = "Кадетская"
+ENT.PrintName = "Kadet"
 ENT.Spawnable = true
-ENT.Category = "SUP • Разработки"
+ENT.Category = "Piwnica Granie • Rzeczy"
 

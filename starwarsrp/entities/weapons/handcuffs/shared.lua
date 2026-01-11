@@ -1,4 +1,4 @@
-SWEP.PrintName 					= 'Наручники'
+SWEP.PrintName 					= 'Kajdanki'
 SWEP.Slot                       = 1
 SWEP.SlotPos                    = 4
 SWEP.DrawAmmo 					= false
@@ -16,7 +16,7 @@ SWEP.ViewModelFOV 				= 70
 SWEP.ViewModelFlip 				= false
 
 SWEP.Spawnable 					= true
-SWEP.Category = "SUP • Разное"
+SWEP.Category 					= 'Piwnica Granie • Bronie'
 SWEP.Primary.ClipSize 			= -1
 SWEP.Primary.DefaultClip 		= 0
 SWEP.Primary.Automatic 			= false

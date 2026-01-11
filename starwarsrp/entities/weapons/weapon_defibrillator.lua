@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 if CLIENT then
-	SWEP.PrintName = "Дефибриллятор"
+	SWEP.PrintName = "Defibrylator"
 	SWEP.Slot = 2
 	SWEP.SlotPos = 1
 	SWEP.DrawAmmo = false
@@ -14,7 +14,7 @@ SWEP.ViewModelFOV = 62
 SWEP.ViewModelFlip = false
 SWEP.AnimPrefix = "rpg"
 SWEP.UseHands = true
-SWEP.Category = "SUP • Медицина"
+SWEP.Category = "Piwnica Granie • Medycyna"
 SWEP.Spawnable = true
 SWEP.AdminOnly = true
 SWEP.ViewModel = "models/craphead_scripts/paramedic_essentials/weapons/c_defibrilator.mdl"
@@ -166,7 +166,7 @@ function SWEP:PrimaryAttack()
 
 		if eTrace:GetClass() == "prop_ragdoll" and (pPlayer and IsValid(pPlayer)) then
 			if not self:GetOwner():Crouching() then
-				self:GetOwner():ChatPrint("Необходимо присесть для реанимации!")
+				self:GetOwner():ChatPrint("Musisz kucnąć, aby przeprowadzić reanimację!")
 				return
 			end
 
@@ -210,7 +210,7 @@ function SWEP:Reanimate(target, pos)
 
 	self:GetOwner():AddMoney(150)
 	self:SetNextPrimaryFire(CurTime() + 6)
-	re.util.Notify("green", self:GetOwner(), "Вы вернули к жизни раненного бойца! Республика поощряет такие действия, получите 150 РК")
+	re.util.Notify("green", self:GetOwner(), "Przywróciliście do życia rannego żołnierza! Republika zachęca do takich działań, otrzymajcie 150 KR.")
 end
 
 function SWEP:Think()
@@ -227,13 +227,13 @@ function SWEP:Think()
 		end
 
 		if not self:GetOwner():Crouching() then
-			re.util.Notify("red", self:GetOwner(), "Необходимо присесть для реанимации!")
+			re.util.Notify("red", self:GetOwner(), "Należy usiąść, aby przeprowadzić resuscytację!")
 			self:SetIsReanimate(false)
 			return
 		end
 
 		if not self:GetOwner():KeyDown(IN_ATTACK) then
-			re.util.Notify("red", self:GetOwner(), "Необходимо задерживать ЛКМ!")
+			re.util.Notify("red", self:GetOwner(), "Należy przytrzymać LPM!")
 			self:SetIsReanimate(false)
 			return
 		end
@@ -260,14 +260,14 @@ function SWEP:Think()
 		end
 
 		if not self:GetOwner():Crouching() then
-			re.util.Notify("red", self:GetOwner(), "Необходимо присесть для реанимации!")
+			re.util.Notify("red", self:GetOwner(), "Należy usiąść, aby przeprowadzić resuscytację!")
 			self:SetIsReanimate(false)
 
 			return
 		end
 
 		if not self:GetOwner():KeyDown(IN_ATTACK) then
-			re.util.Notify("red", self:GetOwner(), "Необходимо задерживать ЛКМ!")
+			re.util.Notify("red", self:GetOwner(), "Należy przytrzymać LPM!")
 			self:SetIsReanimate(false)
 
 			return

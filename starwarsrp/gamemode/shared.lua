@@ -3,7 +3,7 @@ GAMEMODE = GM or GAMEMODE
 
 -- Set up basic gamemode values.
 GM.Name 		= 'StarWarsRP' -- Gamemode name.
-GM.Author 		= 'Renaissance Team' -- Author name.
+GM.Author 		= 'Piwnica Granie' -- Author name.
 GM.Email 		= '_' -- Author email.
 GM.Website 		= '' -- Website.
 GM.Version      = '1.6.7'

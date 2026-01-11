@@ -67,6 +67,6 @@ luna.SquadSystemSideboardTitle = luna.Font("Mont Bold@" .. ScrH() * .035)
 
 surface.CreateFont( "luna.MontBase24Markup", {font = "Mont Bold",size = 23,extended = true,})
 
-TEAM_CONNECTING = team.SetUp(0, "Подключается...", Color(105,126,141))
-TEAM_UNASSIGNED = team.SetUp(1001, "Не определен", Color(105,126,141))
-TEAM_SPECTATOR = team.SetUp(1002, "Наблюдатель", Color(105,126,141))
+TEAM_CONNECTING = team.SetUp(0, "Podłącza się...", Color(105,126,141))
+TEAM_UNASSIGNED = team.SetUp(1001, "Nieokreślony", Color(105,126,141))
+TEAM_SPECTATOR = team.SetUp(1002, "Obserwator", Color(105,126,141))

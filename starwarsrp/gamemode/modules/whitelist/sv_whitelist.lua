@@ -32,7 +32,7 @@ netstream.Hook('ProfileWhitelist_ChangeToTime', function(pPlayer, data)
 		pl:SetNWString('rating', rating)
 		-- pl:SetNetVar('features', features, NETWORK_PROTOCOL_PUBLIC)
 		-- Prevent Loadout.
-		hook.Run('PostPlayerLoadout', player)
+		hook.Run('PostPlayerLoadout', pl)
 	end
 end)
 
@@ -102,9 +102,9 @@ netstream.Hook('ProfileWhitelist_Change', function(pPlayer, data)
 			end
 
 			local ftn = FEATURES_TO_NORMAL[features]
-			hook.Run('PostLoadCharacter', pl, target.char_id, oldCharacter)
+			hook.Run('PostLoadCharacter', pl, target.char_id, oldChar)
 			if ftn and ftn.callback then
-				ftn.callback(ply, newChar)
+				ftn.callback(pl, newChar)
 			end
 		end
 	end)
@@ -169,10 +169,14 @@ netstream.Hook('ViewInfoLegion', function(pPlayer, jobID)
 	end
 
 	local time = CurTime()
-	MySQLite.query(string.format('SELECT legion.*, player.community_id, player.player FROM re_legions AS legion, re_players AS player WHERE legion.team_id = %s AND player.id = legion.last_editor;', MySQLite.SQLStr(jobID)), function(info)
-		netstream.Start(pPlayer, 'ViewInfoLegion', jobID, info[1])
+	MySQLite.query(string.format('SELECT legion.*, player.community_id, player.player FROM re_legions AS legion LEFT JOIN re_players AS player ON player.id = legion.last_editor WHERE legion.team_id = %s LIMIT 1;', MySQLite.SQLStr(jobID)), function(info)
+		local row = (istable(info) and info[1]) or { description = '', community_id = 0, player = '' }
+		row.description = row.description or ''
+		row.community_id = row.community_id or 0
+		row.player = row.player or ''
+		netstream.Start(pPlayer, 'ViewInfoLegion', jobID, row)
 		buffer.info[jobID] = {
-			data = info[1],
+			data = row,
 			last_query = time + 10
 		}
 	end, function(err)

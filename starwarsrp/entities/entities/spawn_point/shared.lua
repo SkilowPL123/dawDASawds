@@ -3,5 +3,5 @@ ENT.Type = "anim"
 
 ENT.PrintName = "Spawn Point (NoUse)"
 ENT.Author = "pack"
-ENT.Category = "SUP • Разработки"
+ENT.Category = "Piwnica Granie • Rzeczy"
 

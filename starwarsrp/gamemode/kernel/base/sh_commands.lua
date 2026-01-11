@@ -55,30 +55,30 @@ function JoinCombat(pPlayer, cmd, args)
 	if pPlayer:GetNWBool("IsHandcuffed") or pPlayer.GetPlayerKidnapper then return end
 
 	if not re.combat.Get() then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Сейчас нет Арены")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Obecnie nie ma Areny")
 
 		return
 	end
 
 	if table.Count(re.combat.CombatPlayers()) >= re.combat.Get():GetMaxPlayers() then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Достигнуто максимальное количество игроков на Арене")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Osiągnięto maksymalną liczbę graczy na Arenie")
 
 		return
 	end
 
 	if re.combat.Get().isStart then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Нельзя войти во время игры")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Nie można wejść podczas gry")
 
 		return
 	end
 
 	if pPlayer:Team() == TEAM_OVERWATCH then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Вы не можете зайти за эту профессию")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Nie możesz wejść za tę profesję")
 
 		return
 	end
 
-	ChatAddText(pPlayer, Color(17, 148, 240), "RE.arena • ", Color(255, 255, 255), "Вы зарегистрированы на участие в Арене")
+	ChatAddText(pPlayer, Color(17, 148, 240), "RE.arena • ", Color(255, 255, 255), "Zarejestrowałeś się na udział w Arenie")
 	pPlayer:JoinCombat()
 end
 
@@ -87,19 +87,19 @@ re.cmd.add("combat", JoinCombat)
 
 function LeaveCombat(pPlayer, cmd, args)
 	if re.combat.Get().isStart then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Нельзя выйти во время игры")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Nie można wyjść podczas gry")
 
 		return
 	end
 
 	if not pPlayer:GetNWBool("inCombat") then
-		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Вы не на Арене")
+		ChatAddText(pPlayer, Color(240, 65, 17), "RE.arena • ", Color(255, 255, 255), "Nie jesteś na Arenie")
 
 		return
 	end
 
 	pPlayer:SetNWBool("inCombat", false)
-	ChatAddText(pPlayer, Color(65, 240, 17), "RE.arena • ", Color(255, 255, 255), "Вы покинули арену")
+	ChatAddText(pPlayer, Color(65, 240, 17), "RE.arena • ", Color(255, 255, 255), "Opuszczasz Arenę")
 end
 
 re.cmd.add("leave", LeaveCombat)
@@ -286,8 +286,8 @@ function AdvertMassage(pPlayer, cmd, args)
 	else
 		netstream.Start({pPlayer}, "ChatMassage", {
 			pPlayer = pPlayer,
-			pre = "ВНИМАНИЕ, ",
-			text = "Вы находитесь на базе, используйте стандартную базовую связь через /comm",
+			pre = "UWAGA, ",
+			text = "Jesteś w bazie, używaj standardowej łączności bazowej przez /comm",
 			color = Color(255,238,0),
 			text_color = Color(228,129,17)
 		})
@@ -485,7 +485,7 @@ function RollMassage(pPlayer, cmd, args)
 	end
 
 	local rand = tostring(math.random(1, 100))
-	netstream.Start(tblPlayers, "RPCommands", pPlayer, Color(255, 255, 255, 255), " кинул кубики, и ему выпало ", Color(17, 148, 240), rand, Color(255, 255, 255, 255), ".")
+	netstream.Start(tblPlayers, "RPCommands", pPlayer, Color(255, 255, 255, 255), " rzucił kostką i wypadło mu ", Color(17, 148, 240), rand, Color(255, 255, 255, 255), ".")
 end
 
 re.cmd.add("roll", RollMassage)
@@ -498,7 +498,7 @@ function TryMassage(pPlayer, cmd, args)
 		table.insert(tblPlayers, v)
 	end
 
-	local try = math.random(0, 6) % 2 == 1 and "неудача" or "успех"
+	local try = math.random(0, 6) % 2 == 1 and "niepowodzenie" or "sukces"
 	netstream.Start(tblPlayers, "RPCommands", team.GetColor(pPlayer:Team()), pPlayer, Color(255, 255, 255, 255), " ", string.Implode(" ", args), ", ", Color(17, 148, 240, 255), try, Color(255, 255, 255, 255), ".")
 end
 

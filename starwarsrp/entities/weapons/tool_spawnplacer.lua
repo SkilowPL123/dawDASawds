@@ -12,7 +12,7 @@ SWEP.ViewModelFlip	= false
 SWEP.ViewModel 		= "models/weapons/cstrike/c_pist_usp.mdl"
 SWEP.WorldModel		= "models/weapons/w_pist_usp.mdl"
 SWEP.WorldModel		= ""
-SWEP.Category		= "SUP • Разработки"
+SWEP.Category		= "Piwnica Granie • Rzeczy"
 SWEP.PrintName		= "Spawn Placer"
 SWEP.Slot			= 0
 SWEP.SlotPos		= 1
@@ -44,7 +44,7 @@ SWEP.Modes = {
 	{
 		reload = function()
 			if CLIENT then
-				chat.AddText("Mode 1: Добавить спавн")
+				chat.AddText("Tryb 1: Dodaj spawn")
 			end
 		end,
 		primary = function(this)
@@ -80,7 +80,7 @@ SWEP.Modes = {
 	{
 		reload = function()
 			if CLIENT then
-				chat.AddText("Mode 2: Удалить спавн")
+				chat.AddText("Tryb 2: Usuń spawn")
 			end
 		end,
 		primary = function(this)
@@ -104,12 +104,12 @@ SWEP.Modes = {
 	{
 		reload = function()
 			if CLIENT then
-				chat.AddText("Mode 3: Принт в консоль")
+				chat.AddText("Tryb 3: Wydrukuj do konsoli")
 			end
 		end,
 		primary = function(this)
 			if CLIENT then
-				chat.AddText("Mode 3: Принт в консоль")
+				chat.AddText("Tryb 3: Wydrukuj do konsoli")
 			else
 				print("/print/ " .. CurTime())
 				for k,v in pairs(this.Spawns) do

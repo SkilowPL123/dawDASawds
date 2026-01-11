@@ -6,7 +6,7 @@ CHAT_DISTANCE = 300
 -- 	[TEAM_JEDI] = true,
 -- 	[TEAM_OVERWATCH] = true
 -- }
-GUM_ROOMS = {"Цитадель", "Трен. зал #1", "Трен. Центр"}
+GUM_ROOMS = {"Cytadela", "Sala treningowa nr 1", "Tren. Centrum"}
 
 ROLE_MULTIPLIERS = {
 	["founder"] = {
@@ -56,85 +56,85 @@ GROUP_ICONS = {
 		material = Material("celestia/fa/128/solid/user.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = nil,
-		symbol = "Игрок"
+		symbol = "Gracz"
 	},
 	["junior"] = {
 		material = Material("celestia/fa/128/solid/star-sharp.png", "noclamp smooth"),
 		col = Color(139, 139, 139, 255),
 		chat_prefix = true,
-		symbol = "Подписка Junior"
+		symbol = "Subskrypcja Junior"
 	},
 	["jedimaster"] = {
 		material = Material("celestia/fa/128/solid/jedi.png", "noclamp smooth"),
 		col = Color(139, 139, 139, 255),
 		chat_prefix = true,
-		symbol = "Мастер Джедаев"
+		symbol = "Mistrz Jedi"
 	},
 	["classic"] = {
 		material = Material("celestia/fa/128/solid/star-sharp.png", "noclamp smooth"),
 		col = Color(136, 66, 211, 255),
 		chat_prefix = "Classic",
-		symbol = "Подписка Classic"
+		symbol = "Subskrypcja Classic"
 	},
 	["argentum"] = {
 		material = Material("celestia/fa/128/solid/star-sharp.png", "noclamp smooth"),
 		col = Color(38, 101, 160, 255),
 		chat_prefix = "Argentum",
-		symbol = "Подписка Argentum"
+		symbol = "Subskrypcja Argentum"
 	},
 	["aurum"] = {
 		material = Material("celestia/fa/128/solid/star-sharp.png", "noclamp smooth"),
 		col = Color(223, 175, 55, 255),
 		chat_prefix = "Aurum",
-		symbol = "Подписка Aurum"
+		symbol = "Subskrypcja Aurum"
 	},
 	["supreme"] = {
 		material = Material("celestia/fa/128/solid/star-sharp.png", "noclamp smooth"),
 		col = Color(32, 95, 204, 255),
 		chat_prefix = true,
-		symbol = "Подписка Supreme"
+		symbol = "Subskrypcja Supreme"
 	},
 	["commander"] = {
 		material = Material("celestia/fa/128/solid/star-shooting.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Коммандер"
+		symbol = "Komandor"
 	},
 	["jediorder"] = {
 		material = Material("celestia/fa/128/solid/sword-laser.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Орден Джедаев"
+		symbol = "Zakon Jedi"
 	},
 	["moderator"] = {
 		material = Material("celestia/fa/128/solid/user-pilot.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Модератор"
+		symbol = "Moderator"
 	},
 	["founder"] = {
 		material = Material("celestia/fa/128/solid/wrench.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Основатель"
+		symbol = "Założyciel"
 	},
 	["serverstaff"] = {
 		material = Material("celestia/fa/128/solid/briefcase-blank.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Команда Сервера"
+		symbol = "Zespół Serwera"
 	},
 	["admin"] = {
 		material = Material("celestia/fa/128/solid/user-pilot.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Администратор"
+		symbol = "Administrator"
 	},
 	["superadmin"] = {
 		material = Material("celestia/fa/128/solid/user-pilot-tie.png", "noclamp smooth"),
 		col = Color(255, 255, 255, 255),
 		chat_prefix = true,
-		symbol = "Главный Администратор"
+		symbol = "Główny Administrator"
 	}
 }
 
@@ -152,7 +152,7 @@ WALKIE_TALKIE_GROUP_RATINGS = {
 	["MC"] = true,
 	["G.ADJ"] = true,
 	["Moff"] = true,
-	["Админ-Работяга"] = true,
+	["Admin-Pracowity"] = true,
 	["ENS"] = true,
 	["LT"] = true,
 	["OLT"] = true,
@@ -169,8 +169,8 @@ WALKIE_TALKIE_GROUP_RATINGS = {
 
 -- Ранги которые могут бронировать залы
 GUM_RATING_EDITORS = {
-	["Орден Джедаев"] = true,
-	["Админ-Работяга"] = true,
+	["Zakon Jedi"] = true,
+	["Admin-Pracowity"] = true,
 	["PFC"] = true,
 	["SPC"] = true,
 	["CPL"] = true,
@@ -225,13 +225,13 @@ GROUPS_HAS_TOOLS = {
 
 -- лусанкии ебал рот
 CONTROLPOINT_ICONS = {
-	["Иконка #1"] = Material("luna_icons/chess-pawn.png", "smooth noclamp"),
-	["Иконка #2"] = Material("luna_icons/chess-rook.png", "smooth noclamp"),
-	["Иконка #3"] = Material("luna_icons/chess-queen.png", "smooth noclamp"),
-	["Иконка #4"] = Material("luna_icons/chess-knight.png", "smooth noclamp"),
-	["Иконка #5"] = Material("luna_icons/chess-king.png", "smooth noclamp"),
-	["Иконка #6"] = Material("luna_icons/black-flag.png", "smooth noclamp"),
-	["Иконка #7"] = Material("luna_icons/swords-emblem.png", "smooth noclamp"),
+	["Ikona #1"] = Material("luna_icons/chess-pawn.png", "smooth noclamp"),
+	["Ikona #2"] = Material("luna_icons/chess-rook.png", "smooth noclamp"),
+	["Ikona #3"] = Material("luna_icons/chess-queen.png", "smooth noclamp"),
+	["Ikona #4"] = Material("luna_icons/chess-knight.png", "smooth noclamp"),
+	["Ikona #5"] = Material("luna_icons/chess-king.png", "smooth noclamp"),
+	["Ikona #6"] = Material("luna_icons/black-flag.png", "smooth noclamp"),
+	["Ikona #7"] = Material("luna_icons/swords-emblem.png", "smooth noclamp"),
 }
 
 HELPPOINTS_TYPES = {
@@ -265,12 +265,12 @@ HELPPOINTS_TYPES = {
 	-- 	icon = Material("celestia/cwrp/markers/obj_attack.vmt"),
 	-- 	sound = "luna_sound_effects/info/infoobnovleno.mp3"
 	-- },
-	["Иконка Дроидов"] = {
+	["Ikona Droidów"] = {
 		color = Color(214, 45, 32),
 		icon = Material("luna_icons/rw_sw_droideka.png"),
 		sound = ""
 	},
-	["Иконка Сердца"] = {
+	["Ikona Serca"] = {
 		color = Color(214, 45, 32),
 		icon = Material("luna_ui_base/etc/resurrect.png"),
 		sound = "luna_sound_effects/med_call/call_01.wav"
@@ -284,25 +284,25 @@ CONTROL_CITIZEN = 3
 CONTROLPOINT_TEAMS = {
 	[0] = {
 		color = Color(191, 191, 191, 255),
-		name = "Нейтралитет",
+		name = "Neutralność",
 		body = 2,
 		icon = Material("luna_ui_base/elements/icon_stripes.png", "smooth noclamp")
 	},
 	[CONTROL_REPUBLIC] = {
 		color = Color(84, 144, 181, 255),
-		name = "Республика",
+		name = "Republika",
 		body = 0,
 		icon = Material("luna_ui_base/elements/republic.png", "smooth noclamp")
 	},
 	[CONTROL_CIS] = {
 		color = Color(255, 37, 37, 255),
-		name = "Сепаратисты",
+		name = "Separatyści",
 		body = 1,
 		icon = Material("luna_ui_base/elements/cis.png", "smooth noclamp")
 	},
 	[CONTROL_CITIZEN] = {
 		color = Color(255, 165, 0, 255),
-		name = "Жители",
+		name = "Mieszkańcy",
 		body = 2,
 		icon = Material("luna_ui_base/elements/luna-ui_circle.png", "smooth noclamp")
 	}
@@ -372,88 +372,88 @@ SUP_ANIMATIONS = {
 
 	["idle_all_angry"] = {
 		icon = Material("luna_menus/hud/emotes/title_64.png", "smooth noclamp"),
-		text = "Злая Стойка",
+		text = "Zła Postawa",
 		time = 0
 	},
 	["cheer"] = {
 		icon = Material("luna_menus/hud/emotes/cheer_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_CHEER,
-		text = "Радость"
+		text = "Radość"
 	},
 	["laugh"] = {
 		icon = Material("luna_menus/hud/emotes/laugh_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_LAUGH,
-		text = "Смех"
+		text = "Śmiech"
 	},
 	["muscle"] = {
 		icon = Material("luna_menus/hud/emotes/sexy_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_MUSCLE,
-		text = "Мускулы"
+		text = "Mięśnie"
 	},
 	["zombie"] = {
 		icon = Material("luna_menus/hud/emotes/zombie_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_RANGE_ZOMBIE,
-		text = "Зомби"
+		text = "Zombie"
 	},
 	["robot"] = {
 		icon = Material("luna_menus/hud/emotes/robot_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_ROBOT,
-		text = "Робот"
+		text = "Robot"
 	},
 	["dance"] = {
 		icon = Material("luna_menus/hud/emotes/dance_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_DANCE,
-		text = "Танец"
+		text = "Taniec"
 	},
 	["agree"] = {
 		icon = Material("luna_menus/hud/emotes/agree_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_AGREE,
-		text = "Соглашение"
+		text = "Zgoda"
 	},
 	["becon"] = {
 		icon = Material("luna_menus/hud/emotes/becon_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_BECON,
-		text = "Позвать"
+		text = "Zawołać"
 	},
 	["disagree"] = {
 		icon = Material("luna_menus/hud/emotes/disagree_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_DISAGREE,
-		text = "Упрекнуть"
+		text = "Nie zgoda"
 	},
 	["salute"] = {
 		icon = Material("luna_menus/hud/emotes/salute_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_SALUTE,
-		text = "Салют"
+		text = "Salut"
 	},
 	["wave"] = {
 		icon = Material("luna_menus/hud/emotes/wave_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_WAVE,
-		text = "Приветствие"
+		text = "Powitanie"
 	},
 	["forward"] = {
 		icon = Material("luna_menus/hud/emotes/forward_64.png", "smooth noclamp"),
 		taunt = ACT_SIGNAL_FORWARD,
-		text = "Вперёд"
+		text = "Naprzód"
 	},
 	["pers"] = {
 		icon = Material("luna_menus/hud/emotes/flamingo_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_TAUNT_PERSISTENCE,
-		text = "Напугать"
+		text = "Napędzać"
 	},
 	["bow"] = {
 		icon = Material("luna_menus/hud/emotes/bow_64.png", "smooth noclamp"),
 		taunt = ACT_GMOD_GESTURE_BOW,
-		text = "Поклон"
+		text = "Ukłon"
 	},
 	["group"] = {
 		icon = Material("luna_menus/hud/emotes/group_64.png", "smooth noclamp"),
 		taunt = ACT_SIGNAL_GROUP,
-		text = "Группа"
+		text = "Grupa"
 	},
 	["halt"] = {
 		icon = Material("luna_menus/hud/emotes/halt_64.png", "smooth noclamp"),
 		taunt = ACT_SIGNAL_HALT,
-		text = "Стоять"
+		text = "Stać"
 	},
 }
 
@@ -463,7 +463,7 @@ UN_HANDCUFFED_DURATION = 1
 
 F4_CREATECHAR = {
 	['primary'] = {
-		name = 'Основное Оружие',
+		name = 'Podstawowa Broń',
 		lerps = {
 			dmg = 0,
 			recoil = 0,
@@ -474,7 +474,7 @@ F4_CREATECHAR = {
 		}
 	},
 	['secondary'] = {
-		name = 'Доп. Оружие',
+		name = 'Dodatkowa Broń',
 		lerps = {
 			dmg = 0,
 			recoil = 0,
@@ -485,7 +485,7 @@ F4_CREATECHAR = {
 		}
 	},
 	['exclusive'] = {
-		name = 'Холодное Оружие',
+		name = 'Broń Biała',
 		lerps = {
 			dmg = 0,
 			recoil = 0,
@@ -496,7 +496,7 @@ F4_CREATECHAR = {
 		}
 	},
 	['veryexclusive'] = {
-		name = 'Особое Оружие',
+		name = 'Specjalna Broń',
 		lerps = {
 			dmg = 0,
 			recoil = 0,
@@ -543,26 +543,26 @@ TYPE_FLEET = 10
 -- Ранги которые выдаются при создании нового персонажа по типу.
 DEFAULT_RATINGS = {
 	[TYPE_CLONE] = "RCT",
-	[TYPE_RPDROID] = "Астромех",
-	[TYPE_DROID] = "КНС",
-	[TYPE_MERCENARY] = "Местный",
+	[TYPE_RPDROID] = "Astromech",
+	[TYPE_DROID] = "CIS",
+	[TYPE_MERCENARY] = "Miejscowy",
 	[TYPE_ROOKIE] = "CDT",
 	[TYPE_CITIZEN] = "",
-	[TYPE_JEDI] = "Орден Джедаев",
-	[TYPE_ADMIN] = "Админ-Работяга",
+	[TYPE_JEDI] = "Zakon Jedi",
+	[TYPE_ADMIN] = "Admin-Pracownik",
 	[TYPE_FLEET] = "PVT",
 }
 
 NORMAL_TYPES = {
-	[TYPE_CLONE] = 'Республика',
-	[TYPE_RPDROID] = 'Дроиды',
-	[TYPE_DROID] = 'Сепаратисты',
-	[TYPE_MERCENARY] = 'Местный',
-	[TYPE_ROOKIE] = 'Кадет, переобучение',
-	[TYPE_CITIZEN] = 'Гражданские',
-	[TYPE_JEDI] = 'Джедаи',
-	[TYPE_ADMIN] = 'Админы',
-	[TYPE_FLEET] = 'Флот',
+	[TYPE_CLONE] = 'Republika',
+	[TYPE_RPDROID] = 'Droidy',
+	[TYPE_DROID] = 'Separatyści',
+	[TYPE_MERCENARY] = 'Miejscowy',
+	[TYPE_ROOKIE] = 'Kadet, przekwalifikowanie',
+	[TYPE_CITIZEN] = 'Obywatele',
+	[TYPE_JEDI] = 'Zakon Jedi',
+	[TYPE_ADMIN] = 'Admin-Pracownik',
+	[TYPE_FLEET] = 'Flota',
 }
 
 -- Ранги по типу: 
@@ -618,27 +618,27 @@ ALIVE_RATINGS = {
 		[21] = "GADM"
 	},
 	[TYPE_RPDROID] = {
-		[1] = "Астромех",
+		[1] = "Astromech",
 	},
 	[TYPE_DROID] = {
-		[1] = "КНС",
+		[1] = "CIS",
 	},
 	[TYPE_JEDI] = {
-		[1] = "Орден Джедаев",
+		[1] = "Zakon Jedi",
 	},
 	[TYPE_ADMIN] = {
-		[1] = "Админ-Работяга",
+		[1] = "Admin-Pracownik",
 	},
 	[TYPE_MERCENARY] = {
-		[1] = "Местный",
-		[2] = "Бывалый",
-		[3] = "Умник",
-		[4] = "Продвинутый",
-		[5] = "Уважаемый",
-		[6] = "Профи",
-		[7] = "Главарь",
-		[8] = "Авторитет",
-		[9] = "Хан",
+		[1] = "Miejscowy",
+		[2] = "Bywały",
+		[3] = "Mądry",
+		[4] = "Zaawansowany",
+		[5] = "Szanowany",
+		[6] = "Profesjonalny",
+		[7] = "Szef",
+		[8] = "Autorytet",
+		[9] = "Han",
 	},
 	[TYPE_ROOKIE] = {
 		[1] = "CDT",
@@ -822,7 +822,7 @@ VEHICLES_FEATURES = {
 			model = "models/swbf3/vehicles/nu_attackship.mdl",
 			price = 100,
 			gmapPrice = 70,
-			name = "Штурмовой шаттл типа «Ню»",
+			name = "Szturmowy prom typu „NU”",
 			icon = Material("luna_icons/heavy-fighter.png")
 		},
 		-- Если price = 0, то техника доступна в любом случае.
@@ -830,7 +830,7 @@ VEHICLES_FEATURES = {
 			model = "models/fisher/laat/laatspace.mdl",
 			price = 0,
 			gmapPrice = 30,
-			name = "Канонерка НЛШТ",
+			name = "Kanonierka LAAT",
 			icon = Material("luna_icons/plane-wing.png")
 		},
 		-- Если price = 0, то техника доступна в любом случае.
@@ -838,7 +838,7 @@ VEHICLES_FEATURES = {
 			model = "models/fisher/laat/laatspace.mdl",
 			price = 0,
 			gmapPrice = 30,
-			name = "Канонерка НЛШТ (Космос)",
+			name = "Kanonierka LAAT (Kosmos)",
 			icon = Material("luna_icons/plane-wing.png")
 		},
 		-- Если price = 0, то техника доступна в любом случае.
@@ -846,7 +846,7 @@ VEHICLES_FEATURES = {
 			model = "models/blu/arc170.mdl",
 			price = 0,
 			gmapPrice = 20,
-			name = "Истребитель-Разведчик-170",
+			name = "Myśliwiec zwiadowczy-170",
 			icon = Material("luna_icons/heavy-fighter.png")
 		},
 		-- Если price = 0, то техника доступна в любом случае. -- ["lunasflightschool_vwing"] = { -- Если price = 0, то техника доступна в любом случае. --     model = "models/blu/vwing.mdl", --     price = 0, --     name = "Истребитель V-Wing", --     icon = Material("luna_ui_base/elements/falcon.png") -- },
@@ -854,28 +854,28 @@ VEHICLES_FEATURES = {
 			model = "models/diggerthings/vwing/5.mdl",
 			price = 0,
 			gmapPrice = 15,
-			name = "«V-wing» Альфа-3 - «Нимб»",
+			name = "«V-wing» Alfa-3 - „Nimbus”",
 			icon = Material("luna_icons/plane-wing.png")
 		},
 		["lvs_starfighter_ywing"] = {
 			model = "models/ywing/BTL-B_Y-Wing.mdl",
 			price = 0,
 			gmapPrice = 45,
-			name = "Звёздный истребитель BTL «Y-wing»",
+			name = "Bombowiec BTL «Y-wing»",
 			icon = Material("luna_icons/plane-wing.png")
 		},
        	["lvs_v19"] = {
 			model = "models/diggerthings/v19/4.mdl",
 			price = 0,
 			gmapPrice = 10,
-			name = "Истребитель «V-19»",
+			name = "Myśliwiec «V-19»",
 			icon = Material("luna_icons/plane-wing.png")
 		},
         ["lvs_repulsorlift_dropship"] = {
 			model = "models/blu/laat_c.mdl",
 			price = 0,
 			gmapPrice = 35,
-			name = "Легкий транспортник «LAAT/C»",
+			name = "Lekki transportowiec „LAAT/C”",
 			icon = Material("luna_icons/plane-wing.png")
 		},
 	},
@@ -885,42 +885,42 @@ VEHICLES_FEATURES = {
 			model = "models/lfs_vehicles/tx427/tx427.mdl",
 			price = 0,
 			gmapPrice = 50,
-			name = "TX-427 Танк Экспериментального Класса",
+			name = "TX-427 Czołg Eksperymentalnej Klasy",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 		["lvs_fakehover_barc"] = {
 			model = "models/barc/barc.mdl",
 			price = 0,
 			gmapPrice = 5,
-			name = "BARC Спидер",
+			name = "BARC Speeder",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 		["lvs_fakehover_iftx"] = {
 			model = "models/blu/iftx.mdl",
 			price = 0,
 			gmapPrice = 25,
-			name = "Платформа Поддержки Пехоты «IFT-X»",
+			name = "Platforma Wsparcia Piechoty «IFT-X»",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 		["lvs_walker_atte"] = {
 			model = "models/starwarsbattlefrontii/vehicles/at-te.mdl",
 			price = 0,
 			gmapPrice = 50,
-			name = "Вездеход-Огневая Поддержка «AT-TE»",
+			name = "Wielozadaniowy pojazd kroczący «AT-TE»",
 			icon = Material("luna_icons/tank-tread.png")
 		},
         ["lvs_walker_atap"] = {
 			model = "models/sw/atot_veh/at-ap.mdl",
 			price = 0,
 			gmapPrice = 35,
-			name = "Штурмовой Шагоход AT-AP",
+			name = "Szturmowy kroczący pojazd «AT-AP»",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 		["tx210ist"] = {
 			model = "models/eoj/lfs_vehicles/tx210ist.mdl",
 			price = 0,
 			gmapPrice = 45,
-			name = "TX-210 «Захватчик»",
+			name = "TX-210 «Zdobywca»",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 		-- ["lvs_walker_atap"] = {
@@ -941,15 +941,15 @@ VEHICLES_FEATURES = {
 			model = "models/vehicles/sky/turbotank/turbotank_s.mdl",
 			price = 0,
 			gmapPrice = 85,
-			name = "Турботанк Джаггернаут",
+			name = "Turbotank Juggernout",
 			icon = Material("luna_icons/tank-tread.png")
 		},
 	},
 }
 
 SPAWNPORTALS_VECTORS = {
-	["Лусанкия"] = Vector("-5554.279785 -8061.700195 5695.418457"),
-	["Равнины Силы"] = Vector("-7701.724609 -10130.999023 -1467.141479"),
+	["Lusankia"] = Vector("-5554.279785 -8061.700195 5695.418457"),
+	["Force Plains"] = Vector("-7701.724609 -10130.999023 -1467.141479"),
 }
 
 DEFAULT_MONEY = 5000
@@ -965,61 +965,61 @@ VEHICLES_TYPES = {
 
 DEFCON_TYPES = {
 	["0"] = {
-		text = "D0 - Активна фаза сбора у взлётно-посадочных платформ для отправки на боевую / спасательную / гуманитарную миссию.",
+		text = "D0 - Aktywna faza zbierania się na platformach startowych przed wysłaniem na misję bojową / ratunkową / humanitarną.",
 		sound = "luna_sound_effects/defcon/defcon0.wav"
 	},
 	["1"] = {
-		text = "D1 - Объявлена немедленная эвакуация бойцов! Всем немедленно вернуться на точки высадки",
+		text = "D1 - Ogłoszona natychmiastowa ewakuacja żołnierzy! Wszyscy natychmiast wracają na punkty zrzutu",
 		sound = "luna_sound_effects/defcon/defcon1inbase.wav"
 	},
 	["2"] = {
-		text = "D2 - Приоритетные места обороны при нападении: Реакторная, Медицинский Блок и Штаб Командования",
+		text = "D2 - Priorytetowe miejsca obrony podczas ataku: Reaktor, Blok Medyczny i Sztab Dowodzenia",
 		sound = "luna_sound_effects/defcon/defcon2.wav"
 	},
 	["3"] = {
-		text = "D3 - Ожидание атаки, назначение бойцов на боевые посты. Все клоны должны занять посты и ждать приказов",
+		text = "D3 - Oczekiwanie na atak, przydzielanie żołnierzy do stanowisk bojowych. Wszyscy klony muszą zająć stanowiska i czekać na rozkazy",
 		sound = "luna_sound_effects/defcon/defcon3.wav"
 	},
 	["4"] = {
-		text = "D4 - Всем немедленно приступить к патрулированию по 3 бойца",
+		text = "D4 - Wszyscy natychmiast przystępują do patrolowania w grupach po 3 żołnierzy",
 		sound = "luna_sound_effects/defcon/defcon4.wav"
 	},
 	["5"] = {
-		text = "Боевая тревога! Подготовить вооружение, а также занять боевые посты.",
+		text = "Alarm bojowy! Przygotować uzbrojenie oraz zająć stanowiska bojowe.",
 		sound = "luna_sound_effects/defcon/defcon5.wav"
 	},
 	["6"] = {
-		text = "D6 - Стационарный Режим Работы",
+		text = "D6 - Tryb stacjonarny",
 		sound = "luna_sound_effects/defcon/defcon6.wav"
 	},
 	["FIX"] = {
-		text = "DFIX - Батальону Технической Инженерии приступить к починке жизненно важных систем",
+		text = "DFIX - Batalion Inżynierii Technicznej przystępuje do naprawy systemów krytycznych",
 		sound = "luna_sound_effects/defcon/defconfix.wav"
 	},
 	["MED"] = {
-		text = "DMED - Всем бойцам немедленно явится на Медицинский Осмотр",
+		text = "DMED - Wszyscy żołnierze natychmiast zgłaszają się na badanie lekarskie",
 		sound = "luna_sound_effects/defcon/defconmed.wav"
 	},
 	["VIRUS"] = {
-		text = "DT - Опасность Вирусного Заражения! Объявлен Карантин! Основные зоны Карантина - Штаб Командования / Карцер / Медицинский Блок",
+		text = "DT - Niebezpieczeństwo zakażenia wirusowego! Ogłoszona kwarantanna! Główne strefy kwarantanny - Sztab Dowodzenia / Izolatka / Blok Medyczny",
 		sound = "luna_sound_effects/defcon/defconvirus.wav"
 	},
 }
 
 function formatMoney(int)
-	return string.Comma(int) .. "РК"
+	return string.Comma(int) .. "KR"
 end
 
 JAIL_VECTORS = {Vector("11163.666992 -1323.293823 -14900.271484"), Vector("11497.041992 -1323.001953 -14899.993164"), Vector("11845.401367 -1322.698242 -14899.656250"), Vector("11841.412109 -818.804199 -14899.660156"),}
 
-DEFAULT_MAP = 'rp_arcanatura_sup_v2' // DEFAULT MAP 		GUSTMAN LOX
+DEFAULT_MAP = 'rp_arcanatura' // DEFAULT MAP 		GUSTMAN LOX
 
 GALACTIC_MAP = {
 	[1] = {
-		name = 'Амальтанна',
+		name = 'Amalthanna',
 		status = 1,
 		desc = {
-			info = 'Пустынная планета с древними руинами, хранящая тайны давно исчезнувшей цивилизации',
+			info = 'Pustynna planeta ze starożytnymi ruinami, skrywająca tajemnice dawno zaginionej cywilizacji.',
 			warinfo = ''
 		},
 		xPos = 300,
@@ -1029,10 +1029,10 @@ GALACTIC_MAP = {
 		price = 100,
 	},
 	[2] = {
-		name = 'Кастелл',
+		name = 'Kastell',
 		status = 1,
 		desc = {
-			info = 'Пустынная планета, известная своими полезными ископаемыми',
+			info = 'Pustynna planeta, znana ze swoich cennych minerałów',
 			warinfo = ''
 		},
 		xPos = 420,
@@ -1042,10 +1042,10 @@ GALACTIC_MAP = {
 		price = 1000,
 	},
 	[3] = {
-		name = 'Нессаван',
+		name = 'Nessavan',
 		status = 1,
 		desc = {
-			info = 'Лесистая планета, известная своими целебными растениями и мудрыми шаманами',
+			info = 'Leśista planeta, znana ze swoich leczniczych roślin i mądrych szamanów',
 			warinfo = ''
 		},
 		xPos = 600,
@@ -1055,10 +1055,10 @@ GALACTIC_MAP = {
 		price = 77,
 	},
 	[4] = {
-		name = 'Амальтанна',
+		name = 'Amalthanna',
 		status = 1,
 		desc = {
-			info = 'Индустриальный мир с обширными фабриками по производству дроидов КНС',
+			info = 'Industrialny świat z rozległymi fabrykami produkującymi droidy CIS',
 			warinfo = ''
 		},
 		xPos = 580,
@@ -1067,10 +1067,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[5] = {
-		name = 'Прайм Тори',
+		name = 'Prime Tori',
 		status = 1,
 		desc = {
-			info = 'Столичная планета, центр галактической торговли и политики',
+			info = 'Stolica planety, centrum galaktycznego handlu i polityki',
 			warinfo = ''
 		},
 		xPos = 750,
@@ -1079,10 +1079,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[6] = {
-		name = 'Веструс',
+		name = 'Vestrus',
 		status = 1,
 		desc = {
-			info = 'Ледяной мир с подземными городами и редкими кристаллами',
+			info = 'Lodowy świat z podziemnymi miastami i rzadkimi kryształami',
 			warinfo = ''
 		},
 		xPos = 1480,
@@ -1091,10 +1091,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[7] = {
-		name = 'Лола-Саю',
+		name = 'Lola-Sayu',
 		status = 1,
 		desc = {
-			info = 'Планета-крепость, защищенная мощными энергетическими щитами',
+			info = 'Planeta-twierdza, chroniona potężnymi tarczami energetycznymi',
 			warinfo = ''
 		},
 		xPos = 940,
@@ -1103,10 +1103,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[8] = {
-		name = 'Мехис III',
+		name = 'Mehis III',
 		status = 1,
 		desc = {
-			info = 'Мир вечной весны с процветающими сельскохозяйственными колониями',
+			info = 'Świat wiecznej wiosny z kwitnącymi koloniami rolniczymi',
 			warinfo = ''
 		},
 		xPos = 1150,
@@ -1115,10 +1115,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[9] = {
-		name = 'Свольдал',
+		name = 'Svoldal',
 		status = 1,
 		desc = {
-			info = 'Планета-архив, хранящая древние голокроны и джедайские артефакты',
+			info = 'Planeta-archiwum, przechowująca starożytne holokrony i artefakty Jedi',
 			warinfo = ''
 		},
 		xPos = 900,
@@ -1127,10 +1127,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[10] = {
-		name = 'Аркантура',
+		name = 'Arcanatura',
 		status = 2,
 		desc = {
-			info = 'Мир-Крепость, штаб и логистический центр секторальной армии',
+			info = 'Świat-twierdza, sztab i centrum logistyczne armii sektorowej',
 			warinfo = ''
 		},
 		xPos = 1250,
@@ -1139,10 +1139,10 @@ GALACTIC_MAP = {
 		team = 1
 	},
 	[11] = {
-		name = 'Ондерон',
+		name = 'Onderon',
 		status = 1,
 		desc = {
-			info = 'Множество полезных ископаемых, но из-за чрезмерной активности хищников ондеронцы предпочитали заниматься торговлей.',
+			info = 'Mnóstwo cennych minerałów, ale z powodu nadmiernej aktywności drapieżników mieszkańcy Onderonu woleli zajmować się handlem.',
 			warinfo = ''
 		},
 		xPos = 1150,
@@ -1151,10 +1151,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[12] = {
-		name = 'Аливала',
+		name = 'Alivala',
 		status = 1,
 		desc = {
-			info = 'Мир каньонов и пещер, населенный искусными ремесленниками',
+			info = 'Świat kanionów i jaskiń, zamieszkany przez zręcznych rzemieślników',
 			warinfo = ''
 		},
 		xPos = 1300,
@@ -1163,10 +1163,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[13] = {
-		name = 'Акророс',
+		name = 'Akroros',
 		status = 1,
 		desc = {
-			info = 'Планета с плавающими островами и редкими летающими существами',
+			info = 'Planeta z pływającymi wyspami i rzadkimi latającymi stworzeniami',
 			warinfo = ''
 		},
 		xPos = 1400,
@@ -1175,10 +1175,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[14] = {
-		name = 'Мосмари',
+		name = 'Mosmari',
 		status = 1,
 		desc = {
-			info = 'Засушливый мир, известный своими опасными гонками на подах',
+			info = 'Zasuszliwy świat, znany ze swoich niebezpiecznych wyścigów na podach',
 			warinfo = ''
 		},
 		xPos = 1450,
@@ -1187,10 +1187,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[15] = {
-		name = 'Орд-Пардрон',
+		name = 'Ord-Pardron',
 		status = 1,
 		desc = {
-			info = 'Орд-Пардрон был богат минералами и рудами наряду с низкой гравитацией',
+			info = 'Ord-Pardron był bogaty minerałami i rudami naraz z niską grawitacją',
 			warinfo = ''
 		},
 		xPos = 750,
@@ -1199,10 +1199,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[16] = {
-		name = 'Анчиси',
+		name = 'Anchisi',
 		status = 1,
 		desc = {
-			info = 'Океанический мир с подводными городами и ценными ресурсами',
+			info = 'Oceaniczny świat z podwodnymi miastami i cennymi zasobami',
 			warinfo = ''
 		},
 		xPos = 330,
@@ -1211,10 +1211,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[17] = {
-		name = 'Нексус-Ортай',
+		name = 'Nexus-Ortai',
 		status = 1,
 		desc = {
-			info = 'Планета-кузница, специализирующаяся на производстве звездных кораблей',
+			info = 'Planeta-kuźnia, specjalizująca się w produkcji statków kosmicznych',
 			warinfo = ''
 		},
 		xPos = 570,
@@ -1223,10 +1223,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[18] = {
-		name = 'Аграбос',
+		name = 'Agrabos',
 		status = 1,
 		desc = {
-			info = 'Аграрный мир, снабжающий продовольствием многие сектора галактики',
+			info = 'Świat rolniczy, zaopatrujący w żywność wiele sektorów galaktyki',
 			warinfo = ''
 		},
 		xPos = 740,
@@ -1235,10 +1235,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[19] = {
-		name = "Клак'дор VII",
+		name = "Klak'dor VII",
 		status = 1,
 		desc = {
-			info = 'Планета-крепость с древними оборонительными сооружениями',
+			info = 'Planeta-krepost z drewnianymi obronnymi sooruzheniyami',
 			warinfo = ''
 		},
 		xPos = 760,
@@ -1247,10 +1247,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[20] = {
-		name = 'Турлто',
+		name = 'Turlto',
 		status = 1,
 		desc = {
-			info = 'Мир с уникальной гравитацией, привлекающий ученых со всей галактики',
+			info = 'Świat z unikalną grawitacją, przyciągający naukowców z całej galaktyki',
 			warinfo = ''
 		},
 		xPos = 960,
@@ -1259,10 +1259,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[21] = {
-		name = "Клак'дор VII",
+		name = "Klak'dor VII",
 		status = 1,
 		desc = {
-			info = 'Планета-святилище, место паломничества для последователей Силы',
+			info = 'Planeta-sanktuarium, miejsce pielgrzymek dla wyznawców Mocy',
 			warinfo = ''
 		},
 		xPos = 770,
@@ -1271,10 +1271,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[22] = {
-		name = 'Астуриас',
+		name = 'Asturias',
 		status = 1,
 		desc = {
-			info = 'Планета, окруженная метеоритным полем, не позволяющая держать флот на орбите',
+			info = 'Planeta, otoczona polem meteorytów, nie pozwalająca na utrzymanie floty na orbicie',
 			warinfo = ''
 		},
 		xPos = 1000,
@@ -1283,10 +1283,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[23] = {
-		name = '«Юфи-7»',
+		name = '«Yufi-7»',
 		status = 2,
 		desc = {
-			info = 'Медицинский Центр, оказывающий поддержку в восстановлении бойцов ВАР',
+			info = 'Centrum medyczne, wspierające rekonwalescencję żołnierzy WAR',
 			warinfo = ''
 		},
 		xPos = 1400,
@@ -1295,10 +1295,10 @@ GALACTIC_MAP = {
 		team = 1
 	},
 	[24] = {
-		name = 'Апотири',
+		name = 'Apotiri',
 		status = 1,
 		desc = {
-			info = 'Мир с огромными каньонами, где проводятся опасные гонки на спидерах',
+			info = 'Świat z ogromnymi kanionami, gdzie odbywają się niebezpieczne wyścigi na speederach',
 			warinfo = ''
 		},
 		xPos = 410,
@@ -1307,10 +1307,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[25] = {
-		name = 'Элевбати',
+		name = 'Elevbati',
 		status = 1,
 		desc = {
-			info = 'Планета мудрецов и философов, известная своими древними библиотеками',
+			info = 'Planeta mędrców i filozofów, znana ze swoich starożytnych bibliotek',
 			warinfo = ''
 		},
 		xPos = 550,
@@ -1319,10 +1319,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[26] = {
-		name = 'Ураннта',
+		name = 'Uranntha',
 		status = 1,
 		desc = {
-			info = 'Горный мир с богатыми залежами редких минералов и кристаллов',
+			info = 'Górny mir z bogatymi zalezami redkich mineralow i kristalow',
 			warinfo = ''
 		},
 		xPos = 520,
@@ -1331,10 +1331,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[27] = {
-		name = 'Вивилини',
+		name = 'Vivillini',
 		status = 1,
 		desc = {
-			info = 'Планета-сад с экзотическими растениями и опасными хищниками',
+			info = 'Planeta-sad z egzotycznymi roślinami i niebezpiecznymi drapieżnikami',
 			warinfo = ''
 		},
 		xPos = 1100,
@@ -1343,10 +1343,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[28] = {
-		name = 'Враслиада',
+		name = 'Vrasliada',
 		status = 1,
 		desc = {
-			info = 'Мир древних руин, привлекающий археологов и охотников за сокровищами',
+			info = 'Świat dawnych ruin, przyciągający archeologów i poszukiwaczy skarbów',
 			warinfo = ''
 		},
 		xPos = 1250,
@@ -1355,10 +1355,10 @@ GALACTIC_MAP = {
 		team = 3
 	},
 	[29] = {
-		name = 'Нью-Плимпто',
+		name = 'Nyu-Plimpto',
 		status = 1,
 		desc = {
-			info = 'Местное население активно поддерживает Сепаратистов.',
+			info = 'Miejscowa ludność aktywnie wspiera Separatystów.',
 			warinfo = ''
 		},
 		xPos = 1360,
@@ -1367,10 +1367,10 @@ GALACTIC_MAP = {
 		team = 1
 	},
 	[30] = {
-		name = 'Кайкиелиус',
+		name = 'Kaikelius',
 		status = 1,
 		desc = {
-			info = 'Мир с уникальной кристаллической структурой и причудливыми формами жизни',
+			info = 'Świat z unikalną strukturą krystaliczną i osobliwymi formami życia',
 			warinfo = ''
 		},
 		xPos = 900,
@@ -1379,10 +1379,10 @@ GALACTIC_MAP = {
 		team = 2
 	},
 	[31] = {
-		name = 'Квиилура',
+		name = 'Kviilura',
 		status = 1,
 		desc = {
-			info = 'Фермерская планета, позволяющая быстро выращивать урожай',
+			info = 'Planeta rolnicza, pozwalająca na szybkie uprawianie plonów',
 			warinfo = ''
 		},
 		xPos = 1030,
@@ -1430,9 +1430,9 @@ timer.Simple(.1, function()
 	FEATURES_TO_NORMAL = {
 		-- ["air"] = { name = "Воздушная Техника", weapons = {"repair_tool"} }, -- ["ground"] = { name = "Наземная Техника", weapons = {"repair_tool"} },
 		["recon"] = {
-			name = "Разведчик",
+			name = "Zwiadowca",
 			weapons = {"masita_dc15x", "rdv_camoswep", "hook", "waypoint_designator"},
-			desc = "Клоны-разведчики носили броню из высокотехнологичного пластоида, под которую надевали чёрный нательный костюм. Их броня была выкрашена в тёмно-зелёные оттенки и они были вооружены бластерными винтовками DC-15A, а также различными снайперскими винтовками. Разведчики использовали BARC-спидеры в разведывательных целях.",
+			desc = "Klon zwiadowcy nosili zbroję z zaawansowanego plastoidu, pod którą zakładali czarny kombinezon. Ich zbroja była pomalowana na ciemnozielone odcienie, a uzbrojeni byli w karabiny blasterowe DC-15A oraz różne karabiny snajperskie. Zwiadowcy wykorzystywali BARC-spidery do celów zwiadowczych.",
 			icon = "luna_menus/hud/classes/9.png",
 			callback = function(ply, char)
 				ply:SetRunSpeed(ply:GetRunSpeed() * 1.10)
@@ -1441,9 +1441,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["marskman"] = {
-			name = "Марксман",
+			name = "Strzelec wyborowy",
 			weapons = {"masita_valken38x", "hook", "waypoint_designator"},
-			desc = "Клоны-разведчики носили броню из высокотехнологичного пластоида, под которую надевали чёрный нательный костюм. Их броня была выкрашена в тёмно-зелёные оттенки и они были вооружены бластерными винтовками DC-15A, а также различными снайперскими винтовками. Разведчики использовали BARC-спидеры в разведывательных целях.",
+			desc = "Klon zwiadowcy nosili zbroję z zaawansowanego plastoidu, pod którą zakładali czarny kombinezon. Ich zbroja była pomalowana na ciemnozielone odcienie, a uzbrojeni byli w karabiny blasterowe DC-15A oraz różne karabiny snajperskie. Zwiadowcy wykorzystywali BARC-spidery do celów zwiadowczych.",
 			icon = "luna_menus/hud/classes/4.png",
 			callback = function(ply, char)
 				ply:SetRunSpeed(ply:GetRunSpeed() * 1.05)
@@ -1452,9 +1452,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["medic"] = {
-			name = "Полевой Медик",
+			name = "Medyk Polowy",
 			weapons = {"weapon_bactainjector", "weapon_defibrillator", "weapon_bactanade", "weapon_med_bandage", "rust_syringe", "weapon_med_scanner", "masita_dp23"},
-			desc = "Обычно клона-медика можно было отличить по оранжевой маркировке брони или по специальной эмблеме, хотя так было не во всех подразделениях. Клон-Медики дополняют свой арсенал ещё и медицинским оборудованием. Как правило, это были два виброскальпеля, один лазерный скальпель и два прижигателя с лазерным же воздействием. При себе они обычно имели рюкзак, в котором находилась бакта в различных видах, бинты и прочие врачебные принадлежности.",
+			desc = "Zwyczajny klon medyk można było rozpoznać po pomarańczowych oznaczeniach na zbroi lub specjalnej emblematce, chociaż nie we wszystkich jednostkach tak było. Klon-Medycy uzupełniali swój arsenał również sprzętem medycznym. Zazwyczaj były to dwa wibroskalpele, jeden laserowy skalpel i dwa przyżegacze z laserowym działaniem. Zazwyczaj mieli przy sobie plecak, w którym znajdowały się różne rodzaje bakty, bandaże i inne przybory medyczne.",
 			icon = "luna_menus/hud/classes/6.png",
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 30)
@@ -1462,9 +1462,9 @@ timer.Simple(.1, function()
             end
 		},
 		["hvymed"] = {
-			name = "Штурмовой Медик",
+			name = "Szturmowy Medyk",
 			weapons = {"masita_dc15a_heavy", "weapon_defibrillator", "weapon_bactainjector", "rust_syringe", "weapon_med_bandage"},
-			desc = "Эти клоны были вооружены одними из самых мощных взрывчатых веществ и оружием, имевшихся в арсенале Великой армии Республики, в том числе гранатами, ракетами, подрывными зарядами и другими видами тяжелого вооружения. Так как их работа часто была связана с подрывной деятельностью, броня была укреплена, дабы защитить носителя.",
+			desc = "Klony te były uzbrojone w jedne z najpotężniejszych materiałów wybuchowych i broni dostępnych w arsenale Wielkiej Armii Republiki, w tym granaty, rakiety, ładunki wybuchowe i inne rodzaje ciężkiego uzbrojenia. Ponieważ ich praca często wiązała się z działalnością wywrotową, pancerz został wzmocniony, aby chronić nosiciela.",
 			icon = "luna_icons/heart-tower.png",
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 45)
@@ -1479,9 +1479,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["desu"] = {
-			name = "Десантник",
+			name = "Spadochroniarz",
 			weapons = {"jet_exec", "masita_dc15s_grenadier"},
-			desc = "Боевая специализация, которая предполагает выполнение операций в условиях быстрого перемещения на поле боя. Десантники используются для высадки в тылу противника, выполнения диверсионных операций и захвата ключевых объектов.",
+			desc = "Specjalizacja bojowa, która zakłada wykonywanie operacji w warunkach szybkiego przemieszczania się na polu walki. Spadochroniarze są wykorzystywani do desantu w tyłach przeciwnika, wykonywania operacji dywersyjnych oraz przejmowania kluczowych obiektów.",
 			icon = "luna_menus/hud/classes/12.png",
 			callback = function(ply, char)
 				ply:SetRunSpeed(ply:GetRunSpeed() * 1.1)
@@ -1490,9 +1490,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["destiaz"] = {
-			name = "Авангардный Десантник",
+			name = "Awangardowy Spadochroniarz",
 			weapons = {"jet_exec", "masita_dc15a_heavy"},
-			desc = "Боевая специализация, которая предполагает выполнение операций в условиях быстрого перемещения на поле боя. Десантники используются для высадки в тылу противника, выполнения диверсионных операций и захвата ключевых объектов.",
+			desc = "Specjalizacja bojowa, która zakłada wykonywanie operacji w warunkach szybkiego przemieszczania się na polu walki. Spadochroniarze są wykorzystywani do desantu w tyłach przeciwnika, wykonywania operacji dywersyjnych oraz przejmowania kluczowych obiektów.",
 			icon = "luna_menus/hud/classes/11.png",
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 50)
@@ -1507,9 +1507,9 @@ timer.Simple(.1, function()
 		    end
 		},
 		["engspec"] = {
-			name = "Инженер-Специалист",
+			name = "Inżynier-specjalista",
 			weapons = {"masita_cr2", "weapon_lvsrepair", "turret_placer", "arccw_btrs_41", "defuser_bomb"},
-			desc = "Клоны-инженеры, также известные как боевые клоны-инженеры, были специальными единицами великой армии Республики и членами боевого батальона инженеров. Задачи инженеров касались, в основном, работы с различной техникой - от оборудования до звездолётов. Нередко инженеры выполняли функции пилотов, а, имея взрывчатку и медицинские аксессуары, вели подрывную и врачебную деятельность.",
+			desc = "Klon-inżynierowie, znani również jako bojowi klon-inżynierowie, byli specjalnymi jednostkami wielkiej armii Republiki i członkami bojowego batalionu inżynierów. Zadania inżynierów dotyczyły głównie pracy z różnymi rodzajami sprzętu – od urządzeń po statki kosmiczne. Często inżynierowie pełnili funkcje pilotów, a dysponując materiałami wybuchowymi i akcesoriami medycznymi, prowadzili działania wywrotowe i medyczne.",
 			icon = "luna_icons/tinker.png",
 			callback = function(ply, char)
 				ply:SetRunSpeed(ply:GetRunSpeed() * 0.85)
@@ -1518,9 +1518,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["engzagrad"] = {
-			name = "Заградитель",
+			name = "Inżynier-Budowa",
 			weapons = {"weapon_lvsrepair", "fort_datapad", "weapon_squadshield_arm", "masita_cr2"},
-			desc = "Эти клоны были вооружены одними из самых мощных взрывчатых веществ и оружием, имевшихся в арсенале Великой армии Республики, в том числе гранатами, ракетами, подрывными зарядами и другими видами тяжелого вооружения. Так как их работа часто была связана с подрывной деятельностью, броня была укреплена, дабы защитить носителя.",
+			desc = "Klony te były uzbrojone w jedne z najpotężniejszych materiałów wybuchowych i broni dostępnych w arsenale Wielkiej Armii Republiki, w tym granaty, rakiety, ładunki wybuchowe i inne rodzaje ciężkiego uzbrojenia. Ponieważ ich praca często wiązała się z działalnością wywrotową, pancerz został wzmocniony, aby chronić nosiciela.",
 			icon = "luna_menus/hud/classes/3.png",
 			callback = function(ply, char)
 				ply:SetMaxArmor(300)
@@ -1532,9 +1532,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["supp"] = {
-			name = "Поддержка",
+			name = "Wsparcie",
 			weapons = {"masita_repshield", "cc_buff_speed", "deployable_force_shield_augment_wep", "masita_dp23", "masita_dual_dc17", "cc_buff_armor", "cc_buff_heal"},
-			desc = "Вы обладает уникальными навыками, позволяющими усиливать боевые способности союзников, а также обеспечивать укрытие и техническую поддержку на поле боя. Клон этого класса предпочитает действовать в команде, координируя свои действия с товарищами и создавая тактические преимущества для своей стороны. Он умеет анализировать обстановку, быстро реагировать на изменения в бою и принимать правильные решения, чтобы обеспечить победу своей команды.",
+			desc = "Posiada unikalne umiejętności pozwalające wzmacniać zdolności bojowe sojuszników, a także zapewniać osłonę i wsparcie techniczne na polu bitwy. Klon tej klasy preferuje działanie w zespole, koordynując swoje działania z towarzyszami i tworząc taktyczne przewagi dla swojej strony. Potrafi analizować sytuację, szybko reagować na zmiany w walce i podejmować właściwe decyzje, aby zapewnić zwycięstwo swojej drużynie.",
 			icon = "luna_menus/hud/classes/5.png",
 			callback = function(ply, char)
 				ply:SetMaxArmor(250)
@@ -1547,9 +1547,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["hvy"] = {
-			name = "Тяжёлый Боец",
+			name = "Ciężki wojownik",
 			weapons = {"arccw_meeks_z6"},
-			desc = "Эти клоны были вооружены одними из самых мощных взрывчатых веществ и оружием, имевшихся в арсенале Великой армии Республики, в том числе гранатами, ракетами, подрывными зарядами и другими видами тяжелого вооружения. Так как их работа часто была связана с подрывной деятельностью, броня была укреплена, дабы защитить носителя.",
+			desc = "Klony te były uzbrojone w jedne z najpotężniejszych materiałów wybuchowych i broni dostępnych w arsenale Wielkiej Armii Republiki, w tym granaty, rakiety, ładunki wybuchowe i inne rodzaje ciężkiego uzbrojenia. Ponieważ ich praca często wiązała się z działalnością wywrotową, pancerz został wzmocniony, aby chronić nosiciela.",
 			icon = "luna_menus/hud/classes/1.png",
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 100)
@@ -1563,9 +1563,9 @@ timer.Simple(.1, function()
 			end
 		},
 		["rpsuser"] = {
-			name = "Тандем",
+			name = "Tandem",
 			weapons = {"arccw_sw_rocket_rps6"},
-			desc = "Эти клоны были вооружены одними из самых мощных взрывчатых веществ и оружием, имевшихся в арсенале Великой армии Республики, в том числе гранатами, ракетами, подрывными зарядами и другими видами тяжелого вооружения. Так как их работа часто была связана с подрывной деятельностью, броня была укреплена, дабы защитить носителя.",
+			desc = "Klony te były uzbrojone w jedne z najpotężniejszych materiałów wybuchowych i broni dostępnych w arsenale Wielkiej Armii Republiki, w tym granaty, rakiety, ładunki wybuchowe i inne rodzaje ciężkiego uzbrojenia. Ponieważ ich praca często wiązała się z działalnością wywrotową, pancerz został wzmocniony, aby chronić nosiciela.",
 			icon = "luna_menus/hud/classes/7.png",
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 30)
@@ -1580,157 +1580,157 @@ timer.Simple(.1, function()
 			end
 		},
 		["air_land"] = {
-			name = "Пилот-Водитель",
+			name = "Pilot-Kierowca",
 			weapons = {"weapon_hands", "weapon_lvsrepair", "masita_dual_dc17"},
-			desc = "Специалист, отвечающий за управление различными транспортными средствами, будь то наземные, водные или воздушные. Его главная задача — доставка войск и грузов на передовые позиции, а также обеспечение оперативного маневрирования на поле боя. Пилоты-водители должны владеть навыками вождения в сложных условиях, уметь обходить преграды и обеспечивать безопасность своего груза или пассажиров.",
+			desc = "Specjalista odpowiedzialny za obsługę różnych pojazdów, czy to lądowych, wodnych czy powietrznych. Jego głównym zadaniem jest dostarczanie wojsk i ładunków na pozycje frontowe oraz zapewnienie sprawnego manewrowania na polu bitwy. Piloci-kierowcy muszą posiadać umiejętności prowadzenia pojazdów w trudnych warunkach, potrafić omijać przeszkody i zapewniać bezpieczeństwo swojego ładunku lub pasażerów.",
 			icon = "luna_icons/bomber.png",
 		},
 		["oficc"] = {
-			name = "Офицер",
+			name = "Oficer",
 			weapons = {"cc_buff_speed", "masita_dual_dc17ext", "masita_dp23", "cc_buff_ressurection",  "waypoint_designator"},
-			desc = "Вы обладает уникальными навыками, координируя свои действия с товарищами и создавая тактические преимущества для своей стороны. Он умеет анализировать обстановку, быстро реагировать на изменения в бою и принимать правильные решения, чтобы обеспечить победу своей команды.",
+			desc = "Posiadasz wyjątkowe umiejętności, koordynując swoje działania z kolegami i tworząc przewagę taktyczną dla swojej drużyny. Potrafisz analizować sytuację, szybko reagować na zmiany w walce i podejmować właściwe decyzje, aby zapewnić zwycięstwo swojej drużynie.",
 			icon = "luna_menus/hud/classes/10.png",
         },
 		["admin_class"] = {
-			name = "Админ-Работяга",
+			name = "Admin-Pracownik",
 			weapons = {"weapon_hands"},
-			desc = "Ты админ, работай, раб системы.",
+			desc = "Jesteś adminem, pracuj, niewolniku systemu.",
 			icon = "luna_menus/hud/classes/17.png",
 			invisible = true,
 			base_job = TEAM_OVERWATCH
 		},
 		["astromech_class"] = {
-			name = "Астромеханик",
+			name = "Astrodroid",
 			weapons = {"weapon_hands"},
-			desc = "Специалист, который отвечает за обслуживание и ремонт космических и авиационных аппаратов, а также сложной техники. В его обязанности входит диагностика неисправностей, настройка систем навигации и вооружения, а также оперативное восстановление поврежденных машин прямо на поле боя или на базе. Астромеханики играют ключевую роль в поддержании боеспособности флота и техники, обеспечивая их бесперебойную работу и готовность к выполнению боевых задач.",
+			desc = "Specjalista odpowiedzialny za obsługę i naprawę statków kosmicznych i powietrznych oraz zaawansowanej technologii. Do jego obowiązków należy diagnozowanie usterek, konfiguracja systemów nawigacji i uzbrojenia oraz szybka naprawa uszkodzonych maszyn bezpośrednio na polu bitwy lub w bazie. Astrodroidy odgrywają kluczową rolę w utrzymaniu gotowości bojowej floty i sprzętu, zapewniając ich nieprzerwaną pracę i gotowość do realizacji zadań bojowych.",
 			icon = "luna_menus/hud/classes/13.png",
 			invisible = true,
 			base_job = TEAM_ASTROMECH
 		},
 		["droidcis_class"] = {
-			name = "Дроид КНС",
+			name = "Droid CIS",
 			weapons = {"weapon_hands"},
-			desc = "боевой автоматизированный юнит, разработанный Конфедерацией Независимых Систем (КНС). Эти дроиды используются как в наземных, так и в космических боях. Они могут выполнять широкий спектр задач: от прямого столкновения с противником до разведки и диверсионных операций. Оснащенные базовым ИИ, дроиды КНС способны самостоятельно принимать тактические решения, адаптируясь к меняющимся условиям боя.",
+			desc = "bojowa zautomatyzowana jednostka opracowana przez Konfederację Niezależnych Systemów (CIS). Droidy te są wykorzystywane zarówno w walkach naziemnych, jak i kosmicznych. Mogą wykonywać szeroki zakres zadań: od bezpośredniej walki z przeciwnikiem po działania rozpoznawcze i dywersyjne. Wyposażone w podstawową sztuczną inteligencję, droidy CIS są w stanie samodzielnie podejmować decyzje taktyczne, dostosowując się do zmieniających się warunków walki.",
 			icon = "luna_menus/hud/classes/15.png",
 			invisible = true,
 			base_job = TEAM_CIS1
 		},
 		["merc_class"] = {
-			name = "Наёмник",
+			name = "Najemnik",
 			weapons = {"weapon_hands"},
-			desc = "Независимый боец, который сражается не по идеологическим причинам, а ради вознаграждения. Эти воины обладают высокой степенью боевой подготовки и часто имеют опыт участия в различных конфликтах. Наёмники могут выполнять как индивидуальные миссии, так и работать в составе групп, действуя по контрактам с различными фракциями или организациями.",
+			desc = "Niezależny wojownik, który walczy nie z powodów ideologicznych, lecz dla nagrody. Ci żołnierze cechują się wysokim poziomem wyszkolenia bojowego i często mają doświadczenie w różnych konfliktach. Najemnicy mogą wykonywać zarówno misje indywidualne, jak i działać w grupach, realizując kontrakty dla różnych frakcji lub organizacji.",
 			icon = "luna_menus/hud/classes/16.png",
 			invisible = true,
 			base_job = TEAM_MERCENARY
 		},
 		["commando_class"] = {
-			name = "Клон-Коммандо",
+			name = "Klon-Komandos",
 			weapons = {"weapon_hands"},
-			desc = "Клон-коммандоc или Республиканский коммандос — солдат-клон Великой армии Республики, обученный для проведения специальных операций. В группах по четыре человека коммандос тренировались по специальной усиленной программе для выполнения специфических задач, слишком сложных для простых солдат. Обычно этими заданиями являлись скрытное проникновение на объект, разведка, ликвидация конкретных объектов и диверсии.",
+			desc = "Klon-komandos lub republikański komandos – żołnierz-klon Wielkiej Armii Republiki, wyszkolony do prowadzenia operacji specjalnych. W grupach po czterech osób komandosi trenowali według specjalnego, intensywnego programu, aby wykonywać zadania zbyt skomplikowane dla zwykłych żołnierzy. Zazwyczaj zadania te polegały na potajemnym wkroczeniu na teren obiektu, rozpoznaniu, likwidacji konkretnych obiektów i dywersjach.",
 			icon = "luna_menus/hud/classes/19.png",
 			invisible = true,
 			base_job = TEAM_COMMANDO
 		},
 		["senator_class"] = {
-			name = "Сенатор",
+			name = "Senator",
 			weapons = {"weapon_hands"},
-			desc = "Должность представителей множеств систем и планет в Сенате Галактической Республики. В период Войн клонов, когда Республика вела борьбу против Конфедерации независимых систем, сепаратистские сенаторы организовали собственный сенат, Конгресс сепаратистов, который вёл дипломатические переговоры от лица всего государства.",
+			desc = "Stanowisko przedstawicieli wielu systemów i planet w Senacie Galaktycznej Republiki. W okresie Wojen Klonów, gdy Republika walczyła przeciwko Konfederacji Niezależnych Systemów, separatystyczni senatorowie zorganizowali własny senat, Kongres separatystów, który prowadził negocjacje dyplomatyczne w imieniu całego państwa.",
 			icon = "luna_menus/hud/classes/18.png",
 			invisible = true,
 			base_job = TEAM_SENATOR
 		},
 		["wookie_class"] = {
-			name = "Вуки",
+			name = "Wookie",
 			weapons = {"weapon_hands"},
-			desc = "В буквальном переводе «народ деревьев» — разумная раса волосатых двуногих гуманоидов, которые жили на планете Кашиик. Один из самых известных представителей расы — Чубакка, друг Хана Соло и второй пилот «Тысячелетнего сокола», который сыграл важную роль в гражданской войне и после неё. Среди вуки встречались и джедаи, хотя такие случаи были крайне редки.",
+			desc = "W dosłownym tłumaczeniu „ludzie drzew” — rozumna rasa owłosionych dwunożnych humanoidów, którzy żyli na planecie Kashyyyk. Jednym z najsłynniejszych przedstawicieli rasy jest Chewbacca, przyjaciel Hana Solo i drugi pilot „Sokoła Millennium”, który odegrał ważną rolę w wojnie domowej i po niej. Wśród Wookiech zdarzały się też Jedi, choć takie przypadki były niezwykle rzadkie.",
 			icon = "luna_menus/hud/classes/14.png",
 			invisible = true,
 			base_job = TEAM_WOOKIE
 		},
 		["citizen_class"] = {
-			name = "Гражданский",
+			name = "Obywatel",
 			weapons = {"weapon_hands"},
-			desc = "Самая многочисленная и политически доминирующая разумная группа рас, имевшая миллионы крупных и малых колоний по всей Галактике.",
+			desc = "Najliczniejsza i politycznie dominująca grupa rozumnych ras, posiadająca miliony dużych i małych kolonii w całej Galaktyce.",
 			icon = "luna_menus/hud/classes/19.png",
 			invisible = true,
 			base_job = TEAM_CITIZEN
 		},
 		["police_class"] = {
-			name = "Полицейский",
+			name = "Policjant",
 			weapons = {"weapon_hands"},
-			desc = "Правоохранительные органы — это организации, которые обеспечивали соблюдение закона под руководством какого-либо правительства. Большинство из них назывались полицией или силами безопасности. Правоохранительные органы на протяжении всей истории Галактики носили различные названия и выполняли различные функции.",
+			desc = "Organy ścigania to organizacje, które zapewniały przestrzeganie prawa pod kierownictwem jakiegoś rządu. Większość z nich nazywano policją lub siłami bezpieczeństwa. Organy ścigania na przestrzeni całej historii Galaktyki nosiły różne nazwy i pełniły różne funkcje.",
 			icon = "luna_menus/hud/classes/14.png",
 			invisible = true,
 			base_job = TEAM_POLICE
 		},
 		["jedi_class"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI1
 		},
 		["jedi_class1"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI2
 		},
 		["jedi_class2"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI3
 		},
 		["jedi_class3"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI4
 		},
 		["jedi_class4"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI5
 		},
 		["jedi_class5"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI7
 		},
 		["jedi_class6"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi — adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaciekłym wrogom, Sithom i ciemnym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stawali w obronie Republiki jako dowódcy armii i jednostek sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDI
 		},
 		["jedi_medic"] = {
-			name = "Джедай",
+			name = "Jedi",
 			weapons = {"weapon_hands"},
-			desc = "Джедай — адепт светлой стороны Силы, служащий Ордену джедаев и использующий энергию Силы. Джедаи боролись за мир и справедливость в Галактической Республике, как правило, против своих заклятых врагов, Ситхов и тёмных джедаев. Во время войн, особенно с участием или развязанных ситхами, джедаи получали воинские звания и вставали на защиту Республики, в качестве командиров армий и подразделений вооруженных сил Республики.",
+			desc = "Jedi – adept jasnej strony Mocy, służący Zakonowi Jedi i wykorzystujący energię Mocy. Jedi walczyli o pokój i sprawiedliwość w Galaktycznej Republice, zazwyczaj przeciwko swoim zaprzysięgłym wrogom, Sithom i mrocznym Jedi. Podczas wojen, zwłaszcza tych z udziałem lub wywołanych przez Sithów, Jedi otrzymywali stopnie wojskowe i stali na straży Republiki jako dowódcy armii i oddziałów sił zbrojnych Republiki.",
 			icon = "luna_ui_base/elements/jedi.png",
 			invisible = true,
 			base_job = TEAM_JEDIMED
 		},
 		["massif"] = {
-			name = "Массифф",
+			name = "Massiff",
 			weapons = {"weapon_hands"},
-			desc = "Некоторые расы и отдельные разумные приручали массиффов для несения патрульной, караульной и охранной службы. Народ песков использовал их для охраны своих бивуаков. Во время Войн клонов солдаты-клоны Великой армии Республики использовали этих зверей как сторожевых, а элитные клоны-разведчики натаскивали их как следопытов.",
+			desc = "Niektóre rasy i pojedyncze istoty inteligentne oswajały masiffy, aby pełniły służbę patrolową, wartowniczą i ochronną. Ludzie piasków wykorzystywali je do ochrony swoich obozowisk. Podczas Wojen Klonów żołnierze-klony Wielkiej Armii Republiki wykorzystywali te zwierzęta jako strażników, a elitarne klony-zwiadowcy szkolili je jako tropicieli.",
 			icon = "luna_icons/pawprint.png",
 			invisible = true,
 			base_job = TEAM_MASIF,
@@ -1749,252 +1749,252 @@ timer.Simple(.1, function()
 	FEATURE_ARMORMODELS = {
 		['snow1'] = {
 			model = 'models/nsn/ct_snow/pm_ct_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_UN}, pPlayer:Team())
 			end
 		},
 		['snow1slk'] = {
 			model = 'models/nsn/41st_snow/pm_41st_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_SLK}, pPlayer:Team())
 			end
 		},
 		['snow1plt'] = {
 			model = 'models/nsn/ct_snow/pm_ct_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_PILOTS}, pPlayer:Team())
 			end
 		},
 		['snow1arf'] = {
 			model = 'models/nsn/41st_snow/pm_41st_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_ARF}, pPlayer:Team())
 			end
 		},
 		['snow2'] = {
 			model = 'models/nsn/212th_snow/pm_212th_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_212}, pPlayer:Team())
 			end
 		},
 		['snow3'] = {
 			model = 'models/nsn/501st_snow/pm_501st_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_501}, pPlayer:Team())
 			end
 		},
 		['snow4'] = {
 			model = 'models/nsn/wolffe_snow/pm_wolffe_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_104}, pPlayer:Team())
 			end
 		},
 		['snow5'] = {
 			model = 'models/nsn/327th_snow/pm_327th_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_327}, pPlayer:Team())
 			end
 		},
 		['snow6'] = {
 			model = 'models/nsn/cg_snow/pm_cg_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_91}, pPlayer:Team())
 			end
 		},
 		['snow7'] = {
 			model = 'models/nsn/gree_snow/pm_gree_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_15}, pPlayer:Team())
 			end
 		},
 		['snow8'] = {
 			model = 'models/nsn/fox_snow/pm_fox_snow.mdl',
-			name = 'Снежная Форма',
+			name = 'Snow Armor',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_8}, pPlayer:Team())
 			end
 		},
 		['flame1'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_UN}, pPlayer:Team())
 			end
 		},
 		['flame1slk'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_SLK}, pPlayer:Team())
 			end
 		},
 		['flame1plt'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_PILOTS}, pPlayer:Team())
 			end
 		},
 		['flame1arf'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_ARF}, pPlayer:Team())
 			end
 		},
 		['flame2'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_212}, pPlayer:Team())
 			end
 		},
 		['flame3'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_501}, pPlayer:Team())
 			end
 		},
 		['flame4'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_104}, pPlayer:Team())
 			end
 		},
 		['flame5'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_327}, pPlayer:Team())
 			end
 		},
 		['flame6'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_91}, pPlayer:Team())
 			end
 		},
 		['flame7'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_15}, pPlayer:Team())
 			end
 		},
 		['flame8'] = {
 			model = 'models/player/lbmodels/cgiclonescuba/cgiclonescuba.mdl',
-			name = 'Форма Водолаза',
+			name = 'Diver Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_8}, pPlayer:Team())
 			end
 		},
 		['out1'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_UN}, pPlayer:Team())
 			end
 		},
 		['out1slk'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_SLK}, pPlayer:Team())
 			end
 		},
 		['out1plt'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_PILOTS}, pPlayer:Team())
 			end
 		},
 		['out1arf'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_ARF}, pPlayer:Team())
 			end
 		},
 		['out2'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_212}, pPlayer:Team())
 			end
 		},
 		['out3'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_501}, pPlayer:Team())
 			end
 		},
 		['out4'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_104}, pPlayer:Team())
 			end
 		},
 		['out5'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_327}, pPlayer:Team())
 			end
 		},
 		['out6'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_91}, pPlayer:Team())
 			end
 		},
 		['out7'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_15}, pPlayer:Team())
 			end
 		},
 		['out8'] = {
 			model = 'models/player/clone cadet/clonecadet.mdl',
-			name = 'Без формы',
+			name = 'No Uniform',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_8}, pPlayer:Team())
 			end
 		},
 		['eng'] = {
 			model = 'models/navy/gnavyengineer2.mdl',
-			name = 'Форма Инженера',
+			name = 'Engineer Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_104}, pPlayer:Team())
 			end
 		},
 		['engpl'] = {
 			model = 'models/navy/gnavyengineer2.mdl',
-			name = 'Форма Инженера',
+			name = 'Engineer Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_PILOTS}, pPlayer:Team())
 			end
 		},
 		['med'] = {
 			model = 'models/navy/gnavymedic.mdl',
-			name = 'Форма Медика',
+			name = 'Medic Suit',
 			check = function(pPlayer)
 				return table.HasValue({TEAM_15}, pPlayer:Team())
 			end

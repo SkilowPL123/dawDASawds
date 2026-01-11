@@ -298,6 +298,32 @@ separatystów, nigdy nie trafiając na Coruscant.]],
         }
     },
     {
+        name = 'Gwardia Coruscant',
+        desc = [[testtesttest]],
+        categories = {
+            {
+                title = 'Żołnierze',
+                jobs = { [TEAM_CG] = true },
+                ranks = { ["RCT"] = true, ["PVT"] = true, ["PSC"] = true, ["PFC"] = true, ["SPC"] = true, ["CPL"] = true }
+            },
+            {
+                title = 'Sierżanci',
+                jobs = { [TEAM_CG] = true },
+                ranks = { ["MSG"] = true, ["SGT"] = true, ["SSG"] = true, ["SFC"] = true, ["SGM"] = true, ["CSM"] = true }
+            },
+            {
+                title = 'Oficerowie',
+                jobs = { [TEAM_CG] = true },
+                ranks = { ["JLT"] = true, ["LT"] = true, ["1LT"] = true, ["HLT"] = true, ["CPT"] = true }
+            },
+            {
+                title = 'Sztab',
+                jobs = { [TEAM_CG] = true },
+                ranks = { ["MJR"] = true, ["LTC"] = true, ["COL"] = true, ["CC"] = true, ["SCC"] = true, ["MC"] = true }
+            }
+        }
+    },
+    {
         name = '15. BATALION',
         desc = [[Klon-medycy — rodzaj żołnierzy-klonów Wielkiej Armii Republiki, służących jako
 lekarze polowi, udzielający pierwszej pomocy na polu bitwy. Klony te zostały wyhodowane

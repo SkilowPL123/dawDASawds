@@ -1396,7 +1396,6 @@ DEFAULT_FEATURES = {
 	["recon"] = false,
 	["marskman"] = false,
 	["medic"] = false,
-	["medic"] = false,
 	["hvymed"] = false,
 	["desu"] = false,
 	["destiaz"] = false,
@@ -1435,9 +1434,9 @@ timer.Simple(.1, function()
 			desc = "Klon zwiadowcy nosili zbroję z zaawansowanego plastoidu, pod którą zakładali czarny kombinezon. Ich zbroja była pomalowana na ciemnozielone odcienie, a uzbrojeni byli w karabiny blasterowe DC-15A oraz różne karabiny snajperskie. Zwiadowcy wykorzystywali BARC-spidery do celów zwiadowczych.",
 			icon = "luna_menus/hud/classes/9.png",
 			callback = function(ply, char)
-				ply:SetRunSpeed(ply:GetRunSpeed() * 1.10)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1.10)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1.10)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["marskman"] = {
@@ -1446,9 +1445,9 @@ timer.Simple(.1, function()
 			desc = "Klon zwiadowcy nosili zbroję z zaawansowanego plastoidu, pod którą zakładali czarny kombinezon. Ich zbroja była pomalowana na ciemnozielone odcienie, a uzbrojeni byli w karabiny blasterowe DC-15A oraz różne karabiny snajperskie. Zwiadowcy wykorzystywali BARC-spidery do celów zwiadowczych.",
 			icon = "luna_menus/hud/classes/4.png",
 			callback = function(ply, char)
-				ply:SetRunSpeed(ply:GetRunSpeed() * 1.05)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1.05)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1.05)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["medic"] = {
@@ -1459,10 +1458,12 @@ timer.Simple(.1, function()
 			callback = function(ply, char)
 				ply:SetMaxHealth(ply:GetMaxHealth() + 30)
 				ply:SetHealth(ply:GetMaxHealth())
+
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)	
             end
 		},
 		["hvymed"] = {
-			name = "Szturmowy Medyk",
+			name = "Sanitariusz",
 			weapons = {"masita_dc15a_heavy", "weapon_defibrillator", "weapon_bactainjector", "rust_syringe", "weapon_med_bandage"},
 			desc = "Klony te były uzbrojone w jedne z najpotężniejszych materiałów wybuchowych i broni dostępnych w arsenale Wielkiej Armii Republiki, w tym granaty, rakiety, ładunki wybuchowe i inne rodzaje ciężkiego uzbrojenia. Ponieważ ich praca często wiązała się z działalnością wywrotową, pancerz został wzmocniony, aby chronić nosiciela.",
 			icon = "luna_icons/heart-tower.png",
@@ -1473,9 +1474,9 @@ timer.Simple(.1, function()
 				ply:SetMaxArmor(350)
 				ply:SetArmor(350)
 
-				ply:SetRunSpeed(ply:GetRunSpeed() * 0.9)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 0.9)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 0.9)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["desu"] = {
@@ -1484,9 +1485,9 @@ timer.Simple(.1, function()
 			desc = "Specjalizacja bojowa, która zakłada wykonywanie operacji w warunkach szybkiego przemieszczania się na polu walki. Spadochroniarze są wykorzystywani do desantu w tyłach przeciwnika, wykonywania operacji dywersyjnych oraz przejmowania kluczowych obiektów.",
 			icon = "luna_menus/hud/classes/12.png",
 			callback = function(ply, char)
-				ply:SetRunSpeed(ply:GetRunSpeed() * 1.1)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1.1)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1.1)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["destiaz"] = {
@@ -1501,9 +1502,9 @@ timer.Simple(.1, function()
 				ply:SetMaxArmor(250)
 				ply:SetArmor(250)
 
-				ply:SetRunSpeed(ply:GetRunSpeed() * 0.85)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 0.85)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 0.85)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 		    end
 		},
 		["engspec"] = {
@@ -1512,9 +1513,9 @@ timer.Simple(.1, function()
 			desc = "Klon-inżynierowie, znani również jako bojowi klon-inżynierowie, byli specjalnymi jednostkami wielkiej armii Republiki i członkami bojowego batalionu inżynierów. Zadania inżynierów dotyczyły głównie pracy z różnymi rodzajami sprzętu – od urządzeń po statki kosmiczne. Często inżynierowie pełnili funkcje pilotów, a dysponując materiałami wybuchowymi i akcesoriami medycznymi, prowadzili działania wywrotowe i medyczne.",
 			icon = "luna_icons/tinker.png",
 			callback = function(ply, char)
-				ply:SetRunSpeed(ply:GetRunSpeed() * 0.85)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 0.85)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 0.85)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["engzagrad"] = {
@@ -1526,9 +1527,9 @@ timer.Simple(.1, function()
 				ply:SetMaxArmor(300)
 				ply:SetArmor(300)
 --
-				ply:SetRunSpeed(ply:GetRunSpeed() * 1.2)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1.2)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1.2)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["supp"] = {
@@ -1541,9 +1542,24 @@ timer.Simple(.1, function()
 				ply:SetArmor(250)
 
 
-				ply:SetRunSpeed(ply:GetRunSpeed() * 1.05)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1.05)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1.05)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
+			end
+		},
+		["zand"] = {
+			name = "Żandarmeria",
+			weapons = {"handcuffs", "arrest_baton", "unarrest_baton", "masita_dc15s_stun", "masita_dc17_stun"},
+			desc = "Posiada unikalne umiejętności pozwalające wzmacniać zdolności bojowe sojuszników, a także zapewniać osłonę i wsparcie techniczne na polu bitwy. Klon tej klasy preferuje działanie w zespole, koordynując swoje działania z towarzyszami i tworząc taktyczne przewagi dla swojej strony. Potrafi analizować sytuację, szybko reagować na zmiany w walce i podejmować właściwe decyzje, aby zapewnić zwycięstwo swojej drużynie.",
+			icon = "luna_menus/hud/classes/5.png",
+			callback = function(ply, char)
+				ply:SetMaxArmor(250)
+				ply:SetArmor(250)
+
+
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["hvy"] = {
@@ -1557,9 +1573,9 @@ timer.Simple(.1, function()
 
 				ply:SetMaxArmor(450)
 				ply:SetArmor(450)
-
-				ply:SetRunSpeed(ply:GetRunSpeed() * 0.85)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 0.85)		
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["rpsuser"] = {
@@ -1574,9 +1590,9 @@ timer.Simple(.1, function()
 				ply:SetMaxArmor(350)
 				ply:SetArmor(350)
 
-				ply:SetRunSpeed(ply:GetRunSpeed() * 0.95)
-				ply:SetWalkSpeed(ply:GetWalkSpeed() * 0.95)
-				ply:SetMaxSpeed(ply:GetMaxSpeed() * 0.95)		
+				ply:SetRunSpeed(ply:GetRunSpeed() * 1)
+				ply:SetWalkSpeed(ply:GetWalkSpeed() * 1)
+				ply:SetMaxSpeed(ply:GetMaxSpeed() * 1)		
 			end
 		},
 		["air_land"] = {

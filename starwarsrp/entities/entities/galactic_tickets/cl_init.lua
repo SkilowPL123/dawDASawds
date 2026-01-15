@@ -18,9 +18,9 @@ function ENT:Draw()
 				draw.RoundedBox(0, icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,Color(22, 23, 28, 150))
 				draw.DrawOutlinedRect(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,Color(255, 255, 255, 150))
 				draw.Icon(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,mat_wep1,color_white)
-				draw.ShadowSimpleText( 'Офицер Густман', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Офицер Густман', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Курирует логистику Секторальной Армии', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Oficer Gustman', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Oficer Gustman', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Nadzoruje logistykę Armii Sektorowej', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
                 --draw.ShadowSimpleText( self:GetUses() .. '/30', luna.NPC2, -3, 110, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 			render.PopFilterMin()
 		cam.End3D2D()
@@ -72,8 +72,8 @@ net.Receive( 'Tickets:Sync', function()
 end )
 
 local btnsTable = {
-	'ПОКУПКА ТЕХНИКИ';
-	'СКЛАД';
+	'ZAKUP SPRZĘTU';
+	'MAGAZYN';
 }
 
 local vehicles = VEHICLES_FEATURES
@@ -123,7 +123,7 @@ net.Receive( 'Tickets:Menu', function()
 		-- draw.SimpleText( 'ЛОГИСТИЧЕСКИЙ ДАТА-ЦЕНТР', 'tickets.1', headerH, scale(15), col.white, 0, 3 )
 		draw.markupText({
             text = {
-                {text = 'ЛОГИСТИЧЕСКИЙ ДАТА-ЦЕНТР — ', font = 'tickets.1', color = {r = 255, g = 255, b = 255}},
+                {text = 'CENTRUM LOGISTYCZNE — ', font = 'tickets.1', color = {r = 255, g = 255, b = 255}},
                 {text = tickets, font = 'tickets.1', color = {r = 255, g = 215, b = 0}}
             },
             x = headerH,
@@ -168,7 +168,7 @@ net.Receive( 'Tickets:Menu', function()
 
 	btn.Paint = function( self, w, h )
 		draw.NewRect( 0, 0, w, h, col.back )
-		draw.SimpleText( 'ПРИОБРЕСТИ', 'tickets.3', w*.5, h*.5, col.white, 1, 1 )
+		draw.SimpleText( 'KUP', 'tickets.3', w*.5, h*.5, col.white, 1, 1 )
 
 		return true
 	end
@@ -176,7 +176,7 @@ net.Receive( 'Tickets:Menu', function()
 	local count = panelRight:Add( 'gmap.entry' )
 	count:Dock(BOTTOM)
 	count:SetTall( scale(40) )
-	count:SetHolderText( 'КОЛИЧЕСТВО ШТУК' )
+	count:SetHolderText( 'ILOŚĆ SZTUK' )
 	count:DockMargin( 0, scale(10), 0, scale(5) )
 	count:SetNumeric( true )
 
@@ -232,7 +232,7 @@ net.Receive( 'Tickets:Menu', function()
 				for feature, data in pairs(VEHICLES_FEATURES) do
 					for class, veh in pairs(data) do
 
-						local price = string.Comma( veh.gmapPrice ).. 'Т'
+						local price = string.Comma( veh.gmapPrice ).. 'T'
 
 						local item = scroll:Add( 'DButton' )
 						item:Dock(TOP)
@@ -289,7 +289,7 @@ net.Receive( 'Tickets:Menu', function()
 						draw.markupText({
 							text = {
 								{text = class.. ' — ', font = 'tickets.3', color = {r = 255, g = 255, b = 255}},
-								{text = count.. ' шт.', font = 'tickets.4', color = {r = 255, g = 215, b = 0}}
+								{text = count.. ' szt.', font = 'tickets.4', color = {r = 255, g = 215, b = 0}}
 							},
 							x = scale(10),
 							y = h*.5,

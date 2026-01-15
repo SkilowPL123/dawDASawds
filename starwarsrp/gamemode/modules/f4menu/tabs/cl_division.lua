@@ -116,7 +116,7 @@ function PANEL:Paint(w, h)
     draw.SimpleText(self.legionName .. ':', 'gm.4', 0, 0, colw, 0, 3)
 
     local p = LocalPlayer()
-    local j = markup.Parse('<colour=' .. colw.r .. ',' .. colw.g .. ',' .. colw.b .. ',' .. colw.a .. '><font=gm.5>Персонаж «</colour></font><colour=' .. colb.r .. ',' .. colb.g .. ',' .. colb.b .. ',' .. colb.a .. '><font=gm.5>' .. p:Name() .. '</colour></font><colour=' .. colw.r .. ',' .. colw.g .. ',' .. colw.b .. ',' .. colw.a .. '><font=gm.5>»</colour></font>')
+    local j = markup.Parse('<colour=' .. colw.r .. ',' .. colw.g .. ',' .. colw.b .. ',' .. colw.a .. '><font=gm.5>Postać «</colour></font><colour=' .. colb.r .. ',' .. colb.g .. ',' .. colb.b .. ',' .. colb.a .. '><font=gm.5>' .. p:Name() .. '</colour></font><colour=' .. colw.r .. ',' .. colw.g .. ',' .. colw.b .. ',' .. colw.a .. '><font=gm.5>»</colour></font>')
     j:Draw(0, scale(110), 0, 3)
 end
 

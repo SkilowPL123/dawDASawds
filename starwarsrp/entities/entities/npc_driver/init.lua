@@ -17,6 +17,6 @@ function ENT:Initialize()
 	end
 
 	self:SetDialogue("driver")
-	self:SetJobName("Офицер Муги")
+	self:SetJobName("Oficer Mugi")
 end
 

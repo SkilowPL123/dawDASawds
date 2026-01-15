@@ -190,7 +190,7 @@ hook.Add('PostDrawTranslucentRenderables', 'NameTags', function(depth, sky)
                 surface_ShadowText(math.Round(pPlayer:Health()) .. '%', luna.MontBaseTitle, -10, oy - 50, Color(214, 45, 32, 250), TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
                 surface_ShadowText(math.Round(pPlayer:Armor()) .. '%', luna.MontBaseTitle, 10, oy - 50, Color(10, 230, 255, 255), TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
                 
-                local vq = 'Солдат'
+                local vq = 'Żołnierz'
                 local l = pPlayer:GetNetVar('features')
                 if l and istable(l) then
                     for feature, status in pairs(l) do

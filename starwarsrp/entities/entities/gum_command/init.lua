@@ -41,7 +41,7 @@ netstream.Hook('GUMCommand_Activate', function(ply, data)
 		ply = ply
 	}
 
-	ply:Say('/comm Занял ' .. GUM_ROOMS[gum] .. ' по причине "' .. data.text .. '".')
+	ply:Say('/comm Zajął ' .. GUM_ROOMS[gum] .. ' z powodu "' .. data.text .. '".')
 
 	SetGlobalTable('gums', gums)
 end)

@@ -29,7 +29,7 @@ function ENT:Draw()
                         draw.SimpleText(str, luna.MontBase84, w/2, 470 + (i*80), Color( 255, 255, 255, 255 ), 1, 1)
                     end
                 else
-                    draw.SimpleText('Не занято', luna.MontBase84, w/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
+                    draw.SimpleText('Nie zajęte', luna.MontBase84, w/2, 300, Color( 65, 255, 65, 255 ), 1, 1)
                 end
             end
 
@@ -122,7 +122,7 @@ netstream.Hook("GUMCommand_OpenMenu", function(ent)
         Entry:SetPaintBorderEnabled( true )
         Entry:SetFont(luna.MontBase22)
         -- Entry:SetAllowNonAsciiCharacters( false )
-        Entry:SetText('Тренировка')
+        Entry:SetText('Trening')
         Entry:SetMultiline( true )
         Entry.Paint = function( self, w, h )
             draw.RoundedBox(6,0,0,w,h,Color(0, 0, 0, 100))
@@ -135,7 +135,7 @@ netstream.Hook("GUMCommand_OpenMenu", function(ent)
         Save:SetPos( Menu:GetWide()*.5 + 2, Menu:GetTall()*.5-Save:GetTall()*.5+50 )
         Save.Paint = function( self, w, h )
             draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-            draw.SimpleText('Сохранить', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+            draw.SimpleText('Zapisz', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
         end
     
         Save.DoClick = function( self )
@@ -149,7 +149,7 @@ netstream.Hook("GUMCommand_OpenMenu", function(ent)
         Close:SetPos( Menu:GetWide()*.5-Close:GetWide() - 2, Menu:GetTall()*.5-Close:GetTall()*.5+50 )
         Close.Paint = function( self, w, h )
             draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-            draw.SimpleText('Закрыть', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+            draw.SimpleText('Zamknij', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
         end
     
         Close.DoClick = function( self )
@@ -163,7 +163,7 @@ netstream.Hook("GUMCommand_OpenMenu", function(ent)
             Clean:SetPos( Menu:GetWide()*.5-Clean:GetWide()*.5, Menu:GetTall()*.5-Clean:GetTall()*.5+100 )
             Clean.Paint = function( self, w, h )
                 draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-                draw.SimpleText('Освободить', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+                draw.SimpleText('Zwolnij', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
             end
         
             Clean.DoClick = function( self )

@@ -125,7 +125,7 @@ netstream.Hook("Driver_OpenMenu", function(data)
 
 						Spawn.Paint = function(self, w, h)
 							draw.RoundedBox(0, 0, 0, w, h, Color(141, 105, 199))
-							draw.SimpleText("Zaspać", luna.MontBase22, w / 2, h / 2, Color(255, 255, 255, 255), 1, 1)
+							draw.SimpleText("Spawn", luna.MontBase22, w / 2, h / 2, Color(255, 255, 255, 255), 1, 1)
 						end
 
 						local left_btn = vgui.Create("DButton", Menu)

@@ -17,5 +17,5 @@ function ENT:Initialize()
 	end
 
 	self:SetDialogue("skills")
-	self:SetJobName("Фабрикатор")
+	self:SetJobName("Fabrykator")
 end

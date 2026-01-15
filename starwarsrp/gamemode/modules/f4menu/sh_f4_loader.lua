@@ -31,16 +31,16 @@ function NewFormatTime(seconds)
 
     local formattedTime = ''
     if days > 0 then
-        formattedTime = formattedTime .. days .. ' д '
+        formattedTime = formattedTime .. days .. ' d '
     end
     if hours > 0 or days > 0 then
-        formattedTime = formattedTime .. hours .. ' ч '
+        formattedTime = formattedTime .. hours .. ' h '
     end
     if minutes > 0 or hours > 0 or days > 0 then
-        formattedTime = formattedTime .. minutes .. ' м '
+        formattedTime = formattedTime .. minutes .. ' m '
     end
     if seconds > 0 or formattedTime == '' then
-        formattedTime = formattedTime .. seconds .. ' с '
+        formattedTime = formattedTime .. seconds .. ' s '
     end
 
     return formattedTime

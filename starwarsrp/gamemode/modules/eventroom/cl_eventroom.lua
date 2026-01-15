@@ -232,7 +232,7 @@ netstream.Hook("OpenEventroomMenu", function(characters)
 				local TextEntry = vgui.Create("DTextEntry", Panel)
 				TextEntry:Dock(FILL)
 				TextEntry:SetText("")
-				TextEntry:SetPlaceholderText( "Трек #" .. #entries + 1 )
+				TextEntry:SetPlaceholderText( "Track #" .. #entries + 1 )
 
 
 				table.insert(entries, 1, TextEntry)

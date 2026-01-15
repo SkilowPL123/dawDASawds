@@ -30,19 +30,11 @@ GameMenu.cfg = {
     links = {
         {
             image = Material( 'luna_menus/esc/steam.png', 'smooth mips' );
-            link = 'https://steamcommunity.com/workshop/filedetails/?id=1234161910';
-        };
-        {
-            image = Material( 'luna_menus/esc/tg.png', 'smooth mips' );
-            link = 'https://discord.com/sup-servers';
+            link = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3604236668';
         };
         {
             image = Material( 'luna_menus/esc/discord.png', 'smooth mips' );
-            link = 'https://discord.com/sup-servers';
-        };
-        {
-            image = Material( 'luna_menus/esc/vk.png', 'smooth mips' );
-            link = 'https://vk.com/sup_servers';
+            link = 'https://discord.gg/vjXyAYMhUg';
         };
     };
 
@@ -90,7 +82,7 @@ GameMenu.cfg = {
             image = Material( 'luna_menus/f4/money.png', 'smooth mips' );
             check = function() 
                 local data = GetPlayerTrackingData( LocalPlayer() )
-                return (string.Comma( data.MoneyEarned ).. ' РК')
+                return (string.Comma( data.MoneyEarned ).. ' KR')
             end;
         };
 
@@ -99,7 +91,7 @@ GameMenu.cfg = {
             image = Material( 'luna_menus/f4/hand.png', 'smooth mips' );
             check = function() 
                 local data = GetPlayerTrackingData( LocalPlayer() )
-                return (string.Comma( data.MoneySpent ).. ' РК')
+                return (string.Comma( data.MoneySpent ).. ' KR')
             end;
         };
 

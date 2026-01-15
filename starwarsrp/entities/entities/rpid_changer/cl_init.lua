@@ -19,9 +19,9 @@ function ENT:Draw()
 				draw.RoundedBox(0, icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,Color(22, 23, 28, 150))
 				draw.DrawOutlinedRect(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,Color(255, 255, 255, 150))
 				draw.Icon(icon_size*-.6,icon_size*-.5-80,icon_size,icon_size,mat_wep1,color_white)
-				draw.ShadowSimpleText( 'Офицер Люпус', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Офицер Люпус', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
-				draw.ShadowSimpleText( 'Здесь вы можете изменить ваш IDN', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Oficer Lupus', luna.NPC1, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Oficer Lupus', luna.NPC1Neon, -3, 0, Color(17, 148, 240), TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
+				draw.ShadowSimpleText( 'Tutaj możesz zmienić swój identyfikator IDN.', luna.NPC2, -3, 70, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
                 --draw.ShadowSimpleText( self:GetUses() .. '/30', luna.NPC2, -3, 110, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP, 1, Color(0, 0, 0, 255))
 			render.PopFilterMin()
 		cam.End3D2D()
@@ -74,8 +74,8 @@ netstream.Hook("RPIDChanger_OpenMenu", function(data)
 
         draw.RoundedBox(6,w*.5 - 150, h*.5 - 50 - 200,300,100,Color(22, 23, 28, 150))
 
-        draw.ShadowSimpleText('Смена вашего IDN оценивается', luna.MontBase22, w*.5, h*.5 - 220, Color(255, 255, 255, 255), 1)
-        draw.ShadowSimpleText('в 10 000 Кредитов', luna.MontBase22, w*.5, h*.5 - 200, Color(255, 255, 255, 255), 1)
+        draw.ShadowSimpleText('Zmiana twojego IDN kosztuje', luna.MontBase22, w*.5, h*.5 - 220, Color(255, 255, 255, 255), 1)
+        draw.ShadowSimpleText('10 000 Kredytów', luna.MontBase22, w*.5, h*.5 - 200, Color(255, 255, 255, 255), 1)
     end
 
 
@@ -97,7 +97,7 @@ netstream.Hook("RPIDChanger_OpenMenu", function(data)
     Save:SetPos( Menu:GetWide()*.5 + 2, Menu:GetTall()*.5-Save:GetTall()*.5+50 )
     Save.Paint = function( self, w, h )
         draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-        draw.SimpleText('Сохранить', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+        draw.SimpleText('Zapisz', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
     end
 
     Save.DoClick = function( self )
@@ -111,7 +111,7 @@ netstream.Hook("RPIDChanger_OpenMenu", function(data)
     Close:SetPos( Menu:GetWide()*.5-Save:GetWide() - 2, Menu:GetTall()*.5-Save:GetTall()*.5+50 )
     Close.Paint = function( self, w, h )
         draw.RoundedBox(4, 0, 0, w, h, Color(0, 0, 0, 100))
-        draw.SimpleText('Закрыть', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
+        draw.SimpleText('Zamknij', luna.MontBase22, w/2, h/2, Color( 255, 255, 255, 255 ), 1, 1)
     end
 
     Close.DoClick = function( self )

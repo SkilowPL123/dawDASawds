@@ -1,4 +1,4 @@
 ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.Usable = true
-ENT.Action = "Wyposażyć"
+ENT.Action = "Wyposaż"

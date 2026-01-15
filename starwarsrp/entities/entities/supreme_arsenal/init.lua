@@ -78,27 +78,27 @@ net.Receive('Arenal.Networking-ammo', function(_, ply)
     local class = net.ReadString()
     local inv = ply:GetInventory()
     if not inv then
-        re.util.Notify('yellow', ply, 'Ошибка: Не удалось получить инвентарь.')
+        re.util.Notify('yellow', ply, 'Błąd: Nie udało się pobrać ekwipunku.')
         return
     end
     local ammo = GetAmmoType(class)
     if not ammo then
-        re.util.Notify('yellow', ply, 'Ошибка: Не удалось получить тип патронов.')
+        re.util.Notify('yellow', ply, 'Błąd: Nie udało się pobrać typu amunicji.')
         return
     end
     local item = sup_inv.NewItem(string.upper(ammo), 1)
     if not item then
-        re.util.Notify('yellow', ply, 'Ошибка: Не удалось создать предмет для патронов.')
+        re.util.Notify('yellow', ply, 'Błąd: Nie udało się stworzyć przedmiotu dla amunicji.')
         return
     end
     local base = sup_inv.GetBaseClass(string.upper(ammo))
     if not sup_inv.ValidItem(string.upper(ammo)) then
-        re.util.Notify('yellow', ply, Format('[???] Упси, похоже предмета нет. Обратись к разработчику (arlekin4 - дс) %s', ammo))
+        re.util.Notify('yellow', ply, Format('[???] Ups, wygląda na to, że nie ma tego przedmiotu. Skontaktuj się z twórcą (!Skilow - dc) %s', ammo))
         return
     end
     local amountToAdd = (base and base.togive) or 1
     inv:Add(item, 1):AddAmount(amountToAdd)
-    re.util.Notify('yellow', ply, Format('Вы взяли патроны для %s!', GetName(class)))
+    re.util.Notify('yellow', ply, Format('Wziąłeś naboje do %s!', GetName(class)))
     ply:SyncInventory()
 end)
 
@@ -129,7 +129,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             inv:Add(i)
         end
 
-        re.util.Notify('yellow', ply, 'Вы забрали все оружие из арсенала!')
+        re.util.Notify('yellow', ply, 'Zabrałeś całą broń z arsenału!')
     elseif action == 'returnall' then
         for _, v in pairs(availableWeapons) do
             if sup_inv.BLOCKED[v] then
@@ -146,7 +146,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             if inv:Contains(v) then timer.Simple(.2, function() inv:RemoveItem(x, y) end) end
         end
 
-        re.util.Notify('yellow', ply, 'Вы вернули все оружие в арсенал!')
+        re.util.Notify('yellow', ply, 'Zwróciłeś całą broń do arsenału!')
         ply:SelectWeapon('weapon_hands')
     elseif action == 'take' then
         local wep = net.ReadString()
@@ -159,7 +159,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             local i = sup_inv.NewItem(wep, 1)
             if not inv:Contains(wep) and i and sup_inv.ValidItem(wep) then
                 inv:Add(i)
-                re.util.Notify('yellow', ply, 'Вы забрали ' .. GetName(wep) .. ' из арсенала!')
+                re.util.Notify('yellow', ply, 'Zabrałeś ' .. GetName(wep) .. ' z arsenału!')
             end
             --  if vaf(wep) then ply:Give(wep) return end
             --  if string.find(wep, 'arrest') then ply:Give(wep) return end inv:Add(sup_inv.NewItem(wep))
@@ -178,7 +178,7 @@ net.Receive('Arenal.Networking-Action', function(_, ply)
             local item = inv:GetItem(x, y)
             if inv:GetEquipped(item.weptype) then inv:UnEquip(item.weptype, true) end
             if inv:Contains(wep) then timer.Simple(.2, function() inv:RemoveItem(x, y) end) end
-            re.util.Notify('yellow', ply, 'Вы отдали ' .. wep .. ' в арсенал!')
+            re.util.Notify('yellow', ply, 'Zwróciłeś ' .. wep .. ' do arsenału!')
         end
     end
 end)

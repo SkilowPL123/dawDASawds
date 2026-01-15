@@ -13,7 +13,7 @@ local function syncAll()
 end
 
 net.Receive( 'Tickets:Buy', function( _, p )
-	if not p:IsAdmin() then p:ChatPrint('Вы не админ.') return end
+	if not p:IsAdmin() then p:ChatPrint('Nie jesteś administratorem.') return end
 
 	local count = net.ReadUInt( 8 )
 	local class = net.ReadString()
@@ -23,7 +23,7 @@ net.Receive( 'Tickets:Buy', function( _, p )
 	if not count or not class or not price then return end
 
 	if tickets <= price then
-		p:ChatPrint( '[!] Недостаточно тикетов!' )
+		p:ChatPrint( '[!] Za mało biletów!' )
 		return
 	end
 
@@ -31,7 +31,7 @@ net.Receive( 'Tickets:Buy', function( _, p )
 		GMap.Vehicles[class] = GMap.Vehicles[class] + count
 		AddTickets( price )
 
-		p:ChatPrint( '[!] Вы закупили '.. GMap.Vehicles[class] + count.. ' шт. техники "'.. class.. '".' )
+		p:ChatPrint( '[!] Kupiłeś '.. GMap.Vehicles[class] + count.. ' szt. sprzętu "'.. class.. '".' )
 
 		syncAll()
 		return 
@@ -40,7 +40,7 @@ net.Receive( 'Tickets:Buy', function( _, p )
 	GMap.Vehicles[class] = count
 	TakeTickets( price )
 
-	p:ChatPrint( '[!] Вы закупили '.. count.. ' шт. техники "'.. class.. '".' )
+	p:ChatPrint( '[!] Kupiłeś '.. count.. ' szt. sprzętu "'.. class.. '".' )
 
 	syncAll()
 end )
@@ -80,7 +80,7 @@ function ENT:Use(activator, caller)
     if not IsValid(activator) or not activator:IsPlayer() then return end
     
     if game.GetMap() == DEFAULT_MAP then
-        re.util.Notify("red", activator, "На домашней карте нельзя! фу")
+        re.util.Notify("red", activator, "Na domowej mapie nie można! Fuj!")
         return
     end
 
@@ -88,6 +88,6 @@ function ENT:Use(activator, caller)
         net.Start('Tickets:Menu')
         net.Send(activator)
     else
-        activator:ChatPrint('У вас нет доступа к этому меню.')
+        activator:ChatPrint('Nie masz dostępu do tego menu.')
     end
 end
